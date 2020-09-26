@@ -75,7 +75,7 @@ function saveAnswer(question) {
     answer: answer
   };
   
-  firebase.database.ref('enio').push.set(answerObject)
+  firebase.database().ref('users/enio').push.set(answerObject)
     .then(function(snapshot) {
       alert('Sucesso!');
   }, function(error) {
