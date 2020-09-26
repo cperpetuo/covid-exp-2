@@ -17,7 +17,7 @@
     <h1>Questionário</h1>
 
      <!-- PERGUNTA 1 -->
-    <h2>Pergunta 1</h2>
+    <h2>Pergunta 1:</h2>
     <input type="radio" id="masculino" name="pergunta1" value="masculino">
     <label for="masculino">Masculino</label><br>
     <input type="radio" id="feminino" name="pergunta1" value="feminino">
@@ -27,7 +27,7 @@
     <button onclick="saveAnswer('pergunta1')">Enviar</button>
 
      <!-- PERGUNTA 2 -->
-    <h2>Pergunta 2</h2>
+    <h2>Pergunta 2:</h2>
     <input type="radio" id="idade1" name="pergunta2" value="30">
     <label for="idade1">0 - 30</label><br>
     <input type="radio" id="idade2" name="pergunta2" value="60">
@@ -76,7 +76,7 @@ function saveAnswer(question) {
     answer: answer
   };
   
-  firebase.database().ref('users/enio').push.set(answerObject)
+  firebase.database().ref('users/enio').push().set(answerObject)
     .then(function(snapshot) {
       alert('Sucesso!');
   }, function(error) {
