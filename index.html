@@ -7,15 +7,25 @@
 
   <h2>Pergunta 1</h2>
   <form id="pergunta1">
-    <input type="radio" id="idade1" name="pergunta1" value="30">
-    <label for="idade1">0 - 30</label><br>
-    <input type="radio" id="idade2" name="pergunta1" value="60">
-    <label for="idade2">31 - 60</label><br>  
-    <input type="radio" id="idade3" name="pergunta1" value="100">
-    <label for="idade3">61 - 100</label><br><br>
+    <input type="radio" id="masculino" name="pergunta1" value="masculino">
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="feminino" name="pergunta1" value="feminino">
+    <label for="feminino">Feminino</label><br>
+    <input type="radio" id="outro" name="pergunta1" value="outro">
+    <label for="outro">Outro</label>
     <button onclick="saveAnswer('pergunta1')">Enviar</button>
   </form>
 
+  <h2>Pergunta 2</h2>
+  <form id="pergunta1">
+    <input type="radio" id="idade1" name="pergunta2" value="30">
+    <label for="idade1">0 - 30</label><br>
+    <input type="radio" id="idade2" name="pergunta2" value="60">
+    <label for="idade2">31 - 60</label><br>  
+    <input type="radio" id="idade3" name="pergunta2" value="100">
+    <label for="idade3">61 - 100</label><br><br>
+    <button onclick="saveAnswer('pergunta2')">Enviar</button>
+  </form>
   
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
