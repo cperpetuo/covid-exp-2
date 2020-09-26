@@ -59,6 +59,11 @@ function saveAnswer(question) {
   
   var answer = document.querySelector('input[name="' + question + '"]:checked').value;
   
+  if(!answer) {
+    alert("Selecione uma opção.");
+    return false;
+  }
+  
   var answerObject = {
     question: question,
     answer: answer
