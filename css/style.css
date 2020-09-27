@@ -1,0 +1,79 @@
+  h1 { 
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .content { 
+    margin: 20px auto; 
+    width: 700px; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .question {
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px 30px;
+    margin-bottom: 50px;
+  }
+
+  .question > span {
+    font-size: small;
+    width: 70px;
+    word-wrap: break-word;
+  }
+
+  .question > .title {
+    font-weight: bold;
+  }
+   
+  .question > .description {
+    font-weight: normal;
+    margin-bottom: 30px;
+    float: right;
+  }
+    
+  .question > img {
+    max-width: 300px;
+    margin: 0px auto 0px auto;
+    display: block;
+  }
+  
+  label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+  }
+
+  input[type=radio], input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 10px;
+  }
+
+  button {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .center {
+    text-align: center;
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  .left {
+    float: left;
+    margin-top: -10px;
+    margin-right: 40px;
+  }
+  
+  .right {
+    margin-top: -10px;
+  	float: right;
+    margin-left: 40px;
+  }
+
+  .check {
+    width: 20px;
+  }
