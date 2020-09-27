@@ -13,17 +13,6 @@ $('document').ready(function(){
     else if(value.options == 'yes_no')
       var options = createOptionsYN(question, key, value);
 
-    // Botao
-    addButton(question, key, value);
-
-    // Check
-    var check = document.createElement("img");
-    check.id = 'check_' + value.id;
-    check.className = 'check';
-    check.style.display = 'none';
-    check.src = 'images/check.png';
-    $(question).append(check);
- 
     // Incrementa pergunta
     count++;
 
@@ -60,7 +49,10 @@ function createQuestion(count, key, value) {
 // Cria opcoes de resposta do tipo (discordo) 1 - 7 (concordo)
 function createOptions1_7(question, key, value) {
 
-   var span1 = document.createElement("span");
+  var options = document.createElement("div");
+  options.className = 'options';
+  
+  var span1 = document.createElement("span");
    span1.className = 'left';
    span1.innerHTML = 'Discordo totalmente';
     
@@ -68,8 +60,8 @@ function createOptions1_7(question, key, value) {
    span2.className = 'right';
    span2.innerHTML = 'Concordo totalmente';
 
-   $(question).append(span1);
-   $(question).append(span2);
+   $(options).append(span1);
+   $(options).append(span2);
 
    for(i=1; i<=7; i++) {
     var input = document.createElement("input");
@@ -80,16 +72,17 @@ function createOptions1_7(question, key, value) {
     var label = document.createElement("label");
     label.for = input.id;
     label.innerHTML = input.value;
-    $(question).append(input);
-    $(question).append(label);
+    $(options).append(input);
+    $(options).append(label);
   }
+  $(question).append(options);
 }
 
 // Cria opcoes de resposta do tipo SIM / NÃO
 function createOptionsYN(question, key, value) {
 
   var div = document.createElement("div");
-  div.className = 'center';
+  div.className = 'center options';
 
   // Sim
   var input = document.createElement("input");
@@ -116,18 +109,4 @@ function createOptionsYN(question, key, value) {
   $(div).append(label);
 
   $(question).append(div);
-}
-
-// Adiciona o botão para envio da resposta
-function addButton(question, key, value){
-  var br = document.createElement("br");
-  var p = document.createElement("p");
-  p.className = "center";
-  var button = document.createElement("button");
-  button.innerHTML = "Enviar resposta";
-  button. onclick = function(event) {saveAnswer(value.id)};
-  p.appendChild(button);
-
-  question.appendChild(br);
-  question.appendChild(p);
 }

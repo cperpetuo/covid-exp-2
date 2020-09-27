@@ -20,7 +20,7 @@
     margin-bottom: 50px;
   }
 
-  .question > span {
+  .question > div > span {
     font-size: small;
     width: 70px;
     word-wrap: break-word;
@@ -32,8 +32,7 @@
    
   .question > .description {
     font-weight: normal;
-    margin-bottom: 30px;
-    float: right;
+    margin-bottom: 50px;
   }
     
   .question > img {
@@ -41,12 +40,17 @@
     margin: 0px auto 0px auto;
     display: block;
   }
+
+  .options {
+    padding-bottom: 50px;
+  }
   
   label {
     float: left;
     clear: none;
     display: block;
     padding: 0px 1em 0px 8px;
+    margin-bottom: 50px;
   }
 
   input[type=radio], input.radio {
@@ -56,7 +60,7 @@
   }
 
   button {
-    margin: 20px 0;
+    margin-bottom: 50px;
     padding: 10px;
   }
 
@@ -78,6 +82,17 @@
     margin-left: 40px;
   }
 
-  .check {
-    width: 20px;
+  #success {
+    border: 1px solid green;
+    background-color: #D1EEC6;
+  }
+
+  #success > p {
+    text-align: center;
+    padding: 20px 60px 10px 60px;
+  }
+
+  #codigo {
+    font-weight: bolder;
+    font-size: 18pt;
   }
