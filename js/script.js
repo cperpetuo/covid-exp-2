@@ -31,6 +31,7 @@ $('document').ready(function(){
 
 });
 
+// Cria o cabeçalho e descrição da pergunta
 function createQuestion(count, key, value) {
   var question = document.createElement("div");
   question.className = 'question';
@@ -45,6 +46,7 @@ function createQuestion(count, key, value) {
 
   $(question).append(title);
 
+  // Inclui a imagem na pergunta
   if(value.image){
     var image = document.createElement('img');
     image.src = value.image;
@@ -55,6 +57,7 @@ function createQuestion(count, key, value) {
   return question;
 }
 
+// Cria opcoes de resposta do tipo (discordo) 1 - 7 (concordo)
 function createOptions1_7(question, key, value) {
 
    var span1 = document.createElement("span");
@@ -82,6 +85,7 @@ function createOptions1_7(question, key, value) {
   }
 }
 
+// Cria opcoes de resposta do tipo SIM / NÃO
 function createOptionsYN(question, key, value) {
 
   var div = document.createElement("div");
@@ -114,6 +118,7 @@ function createOptionsYN(question, key, value) {
   $(question).append(div);
 }
 
+// Adiciona o botão para envio da resposta
 function addButton(question, key, value){
   var br = document.createElement("br");
   var p = document.createElement("p");
