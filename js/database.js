@@ -38,6 +38,7 @@ function saveAnswers() {
       .then(function(snapshot) {
         alert("Dados inseridos com sucesso.");
         $("#codigo").html(code);
+        $("#next").attr('href', $("#next").attr('href') + code);
         $("#success").show();
      }, function(error) {
       alert(error);
@@ -45,7 +46,7 @@ function saveAnswers() {
   } else {
     firebase.database().ref('users/' + code).update(answerObject)
     .then(function(snapshot) {
-      alert("Dados atualizaados com sucesso.");
+      alert("Dados atualizados com sucesso.");
       $("#codigo").html(code);
       $("#success").show();
     }, function(error) {
