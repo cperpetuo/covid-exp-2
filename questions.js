@@ -321,11 +321,7 @@ var questions_crenças= [
         description: 'O distanciamento social é uma medida eficiente para o controle do COVID-19. ',
         options: '1-7',
         type: 'distanciamento'
-     },   
-    
-    
-    
-    
+     }    
 ];  
     
     
