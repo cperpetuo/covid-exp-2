@@ -174,10 +174,6 @@ var questions = [
         options: '1-7',
         type: 'conspiratoria'
     },
-    
-     
-    
-       
     {
         id: 3,
         title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet leo maximus, sagittis justo a, vulputate tellus. Aliquam fringilla.',
@@ -187,3 +183,124 @@ var questions = [
         image: 'images/fakenews.jpg'
     }
 ];
+
+var questions_risk = [
+    {
+        id: 101,
+        title: 'Para responder às questões a seguir, use a escala fornecida abaixo, pensando nos receios/riscos que você sente(iu) em sua experiência durante a pandemia.',
+        description: 'Qual é a probabilidade de você ficar infectado com o COVID-19 nas próximas semanas?',
+        options: '1-7',
+        type: 'risco_pessoal'
+    },
+    {
+        id: 102,
+        description: 'Qual a probabilidade de você ser infectado pelo COVID-19 nos próximos meses?',
+        options: '1-7',
+        type: 'risco_pessoal'
+    },
+    {
+        id: 103,
+        description: 'Qual é a probabilidade de você conhecer alguém que será infectado pelo COVID-19 nas próximas semanas? ',
+        options: '1-7',
+        type: 'risco_outro'
+    },
+    {
+        id: 104,
+        description: 'Qual a probabilidade de você conhecer alguém que será infectado pelo COVID-19 nos próximos meses?',
+        options: '1-7',
+        type: 'risco_outro'
+    },
+    {
+        id: 105,
+        description: 'O COVID-19 representa um grande risco à saúde da minha comunidade.',
+        options: '1-7',
+        type: 'risco_social'
+    },
+     {
+        id: 106,
+        description: 'O COVID-19 representa um grande risco à saúde do meu estado.',
+        options: '1-7',
+        type: 'risco_social'
+    },
+    {
+        id: 107,
+        description: 'O COVID-19 representa um grande risco à saúde dos brasileiros.',
+        options: '1-7',
+        type: 'risco_social'
+    }
+];
+
+var questions_crenças= [    
+    {
+        id: 201,
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
+        description: 'Tenho acompanhado de perto as notícias relacionadas ao COVID-19.',
+        options: '1-7',
+        type: 'autoconhecimento'
+    },
+    {
+        id: 202,
+        description: 'Estou bem informado sobre a questão do COVID-19.',
+        options: '1-7',
+        type: 'autoconhecimento'
+    },
+    {
+        id: 203,
+        description: 'A mídia tem sido precisa na cobertura do COVID-19.',
+        options: '1-7',
+        type: 'midia'
+    },
+    {
+        id: 204,
+        description: 'A mídia exagerou a severidade do COVID-l9 [pontuação inversa].',
+        options: '1-7',
+        type: 'midia'
+    },
+    {
+        id: 205,
+        description: 'A mídia exagerou no COVID-19 para confrontar o presidente Jair Bolsonaro.',
+        options: '1-7',
+        type: 'midia'
+    },
+    {
+        id: 206,
+        description: 'Confio na maneira como a mídia cobriu a história do COVID-19.',
+        options: '1-7',
+        type: 'midia'
+    },
+    {
+        id: 207,
+        description: 'A ciência nos fornece uma melhor compreensão do universo do que a religião. ',
+        options: '1-7',
+        type: 'ciencia'
+    },
+    {
+        id: 208,
+        description: 'O método científico é o melhor caminho confiável para o conhecimento.',
+        options: '1-7',
+        type: 'ciencia'
+    },
+    {
+        id: 209,
+        description: 'O real conhecimento que podemos ter é o conhecimento científico. ',
+        options: '1-7',
+        type: 'ciencia'
+    },
+    {
+        id: 210,
+        description: 'A ciência é a parte mais valiosa da cultura humana.',
+        options: '1-7',
+        type: 'midia'
+    },
+    {
+        id: 211,
+        description: 'A ciência é o meio mais eficiente de alcançar a cura para o COVID-19.',
+        options: '1-7',
+        type: 'midia'
+    },
+    
+    
+    
+    
+    
+    
