@@ -25,15 +25,18 @@ function createQuestion(count, key, value) {
   var question = document.createElement("div");
   question.className = 'question';
   
-  var title = document.createElement("p");
-  title.className = 'title';
-  title.innerHTML = count + ') ' + value.title;
-  
+  if(value.title) {
+    var title = document.createElement("p");
+    title.className = 'title';
+    title.innerHTML = value.title;
+    
+    $(question).append(title);
+    count = 1;
+  }
+
   var description = document.createElement("p");
   description.className = 'description';
   description.innerHTML = count + ') ' + value.description;
-
-  //$(question).append(title);
 
   // Inclui a imagem na pergunta
   if(value.image){
