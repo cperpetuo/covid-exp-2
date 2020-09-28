@@ -17,17 +17,19 @@
     border: 0px solid gray;
     --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 10px 30px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .question > div > span {
     font-size: small;
+    font-weight: bold;
     width: 70px;
     word-wrap: break-word;
   }
 
   .question > .title {
     font-weight: bold;
+    margin-bottom: 50px;
   }
    
   .question > .description {
