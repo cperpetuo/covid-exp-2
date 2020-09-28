@@ -1,25 +1,3 @@
-$('document').ready(function(){
-
-  var count = 1;
-  $.each( questions, function( key, value ) {
-
-    // Pergunta
-    var question = createQuestion(count, key, value);
-    $("#content").append(question);
-
-    // Opcoes de resposta
-    if(value.options == '1-7')
-      var options = createOptions1_7(question, key, value);
-    else if(value.options == 'yes_no')
-      var options = createOptionsYN(question, key, value);
-
-    // Incrementa pergunta
-    count++;
-
-  });
-
-});
-
 // Cria o cabeçalho e descrição da pergunta
 function createQuestion(count, key, value) {
   var question = document.createElement("div");
