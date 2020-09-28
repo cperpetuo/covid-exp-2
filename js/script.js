@@ -37,6 +37,7 @@ function createQuestion(count, key, value) {
   var description = document.createElement("p");
   description.className = 'description';
   description.innerHTML = count + ') ' + value.description;
+  $(question).append(description);
 
   // Inclui a imagem na pergunta
   if(value.image){
@@ -44,7 +45,6 @@ function createQuestion(count, key, value) {
     image.src = value.image;
     $(question).append(image);
   }
-  $(question).append(description);
 
   return question;
 }
