@@ -303,7 +303,7 @@ var questions_crenças= [
 var questions_demograficas= [    
     {
         id: 301,
-        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
+        title: 'As questões a seguir tratam do seu perfil pessoal. Sinta-se à vontade para responder, lembrando que seus dados serão tratados de forma confidencial de forma a preservar sua privacidade e o sigilo das informações disponibilizadas.',
         description: 'Sexo:',
         options: 'list',
         list: ['Masculino','Feminino','Outro'],
@@ -313,9 +313,69 @@ var questions_demograficas= [
         id: 302,
         description: 'Idade:',
         options: 'list',
-        list: ['Entre 20 e 29 anos','Entre 30 e 39 anos','Entre 40 e 49 anos','Entre 50 e 59 anos','Entre 60 e 69 anos', 'Acima de 70 anos'],
+        list: ['Entre 20 e 29 anos','Entre 30 e 39 anos','Entre 40 e 49 anos','Entre 50 e 59 anos','Acima de 60 anos'],
         type: 'perfil_respondente'
     },
+     {
+        id: 303,
+        description: 'Renda Familiar Bruta Mensal (incluindo todas as fontes de renda, tais como: salários, comissões, aluguéis, outros)',
+        options: 'list',
+        list: ['até 1.874,00','R$ 1.874,01 a R$ 3.748,00','R$ 3.748,01 a R$ 9.370,00','R$ 9.370,01 a R$ 18.740,00','Acima de R$ 18.740,00'],
+        type: 'perfil_respondente'
+    },  
+    {
+        id: 304,
+        description: 'Qual o tamanho da população onde você mora?',
+        options: 'list',
+        list: ['mais de 10 M habitantes','5.1 M – 10 M habitantes','1.1 M  - 5 M habitantes','menos de 1 M habitantes'],
+        type: 'perfil_respondente'
+    },  
+    {
+        id: 305,
+        description: 'Qual é o seu nível de escolaridade?',
+        options: 'list',
+        list: ['sem educação formal','até o ensino médio','ensino superior','pós-graduação'],
+        type: 'perfil_respondente'
+    },  
+    {
+        id: 306,
+        description: 'Em que estado você reside?',
+        options: 'list',
+        list: ['Capital', 'Interior'],
+        type: 'perfil_respondente'
+    },  
+    {
+        id: 307,
+        description: 'Quantas pessoas no total moram em sua casa?',
+        options: 'list',
+        list: ['Uma pessoa / Moro sozinho (a)', 'Duas pessoas', 'Três pessoas','Quatro pessoas', 'Cinco ou mais pessoas'],
+        type: 'perfil_respondente'
+     },     
+     {
+        id: 308,
+        description: 'Quais tipos de mídias sociais você utiliza?',
+        options: 'check-list',
+        list: ['Twitter', 'Facebook', 'Instagram','Telegram','Wechat', 'WhatsApp', 'Linkedin', 'Nenhuma'],
+        type: 'perfil_respondente'
+     },     
+     {
+        id: 309,
+        description: 'Quais tipos de mensagens você consideraria compartilhar na mídia social (se alguma)?',
+        options: 'check-list',
+        list: ['Notícias de esportes', 'Notícias políticas', 'Celebridades','Notícias de negócio (tendências de mercado, oportunidades de emprego)','Ciência e tecnologia', 'Bem-estar e saúde', 'Humor, piadas, memes', 'Outras'],
+        type: 'perfil_respondente'
+     }, 
+     {
+        id: 310,
+        description: 'Com que frequência você verifica as mensagens mídias sociais?',
+        options: 'check-list',
+        list: ['BBC News', 'G1', 'Secom','OMS','CNN', 'TV Senado', 'Google News', 'Outros'],
+        type: 'perfil_respondente'
+      }, 
+    ];
+
+
+    
     
     
     
