@@ -31,7 +31,7 @@ function createQuestion(count, key, value) {
   
   var description = document.createElement("p");
   description.className = 'description';
-  description.innerHTML = value.description;
+  description.innerHTML = count + ') ' + value.description;
 
   //$(question).append(title);
 
