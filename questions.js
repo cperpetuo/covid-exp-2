@@ -290,15 +290,43 @@ var questions_crenças= [
         id: 210,
         description: 'A ciência é a parte mais valiosa da cultura humana.',
         options: '1-7',
-        type: 'midia'
+        type: 'ciencia'
     },
     {
         id: 211,
         description: 'A ciência é o meio mais eficiente de alcançar a cura para o COVID-19.',
         options: '1-7',
-        type: 'midia'
+        type: 'ciencia'
     },
+    {
+        id: 212,
+        description: 'Evitei intencionalmente qualquer forma de aglomeração social devido ao COVID-19. ',
+        options: '1-7',
+        type: 'distanciamento'
+    },   
+   {
+        id: 213,
+        description: 'Em geral, segui as diretrizes do governo relacionadas ao distanciamento social. ',
+        options: '1-7',
+        type: 'distanciamento'
+    },   
+    {
+        id: 214,
+        description: 'Eu mantenho uma distância de 1,5m de outras pessoas fora da minha família imediata por causa do COVID-19.',
+        options: '1-7',
+        type: 'distanciamento'
+    },   
+    {
+        id: 215,
+        description: 'O distanciamento social é uma medida eficiente para o controle do COVID-19. ',
+        options: '1-7',
+        type: 'distanciamento'
+     },   
     
+    
+    
+    
+];  
     
     
     
