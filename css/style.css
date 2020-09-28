@@ -18,6 +18,7 @@
     --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 10px 30px;
     margin-bottom: 0px;
+    border-bottom: 1px dashed lightgray;
   }
 
   .question > div > span {
@@ -39,7 +40,7 @@
     
   .question > img {
     max-width: 300px;
-    margin: 0px auto 0px auto;
+    margin: -20px auto 30px auto;
     display: block;
   }
 
