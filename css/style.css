@@ -14,8 +14,8 @@
   }
 
   .question {
-    border: 1px solid gray;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 0px solid gray;
+    --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 10px 30px;
     margin-bottom: 50px;
   }
