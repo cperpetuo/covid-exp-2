@@ -33,7 +33,7 @@ function createQuestion(count, key, value) {
   description.className = 'description';
   description.innerHTML = value.description;
 
-  $(question).append(title);
+  //$(question).append(title);
 
   // Inclui a imagem na pergunta
   if(value.image){
