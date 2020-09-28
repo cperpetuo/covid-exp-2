@@ -300,6 +300,22 @@ var questions_crenças= [
 ];  
     
     
+var questions_demograficas= [    
+    {
+        id: 301,
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
+        description: 'Sexo:',
+        options: 'list',
+        list: ['Masculino','Feminino','Outro'],
+        type: 'perfil_respondente'
+    },
+    {
+        id: 302,
+        description: 'Idade:',
+        options: 'list',
+        list: ['Entre 20 e 29 anos','Entre 30 e 39 anos','Entre 40 e 49 anos','Entre 50 e 59 anos','Entre 60 e 69 anos', 'Acima de 70 anos'],
+        type: 'perfil_respondente'
+    },
     
     
     
