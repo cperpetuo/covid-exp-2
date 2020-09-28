@@ -15,6 +15,11 @@
     
     <h1>Questionário 2</h1>
 
+    <div class="code">
+      <p>Para continuar a pesquisa, insira o seu código no campo abaixo:</p>
+      <input type="text" id="code" name="code" value=""/>
+    </div>
+
   </div>
 
   <div id="success" class="content" style="display: none;">
@@ -23,7 +28,7 @@
     <p>Siga para a <a id='next' href="index3.html?code=">próxima etapa</a></p>
   </div>
 
-  <div class="center"><button onclick="saveAnswers()">Enviar respostas</button></div>
+  <div class="center"><button onclick="saveAnswers('risco')">Enviar respostas</button></div>
   
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
@@ -45,6 +50,13 @@
 
     $('document').ready(function(){
 
+      // Seta o codigo do respondente
+      var url = new URL(window.location.href);
+      var code = url.searchParams.get("code");
+      if(code != null) {
+        $('#code').val(code);
+      }
+
       var count = 1;
       $.each( questions_risk, function( key, value ) {
 
@@ -57,6 +69,10 @@
           var options = createOptions1_7(question, key, value);
         else if(value.options == 'yes_no')
           var options = createOptionsYN(question, key, value);
+        else if(value.options == 'list')
+          var options = createOptionsList(question, key, value);
+        else if(value.options == 'check-list')
+          var options = createOptionsCheckList(question, key, value);
 
         // Incrementa pergunta
         count++;
