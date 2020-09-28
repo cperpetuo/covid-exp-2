@@ -1,7 +1,5 @@
-var code = "";
-
 // Insere todas as respostas na base de dados
-function saveAnswers() {
+function saveAnswers(formName) {
  
   // Obtem as respostas selecionadas
   var fields = document.getElementsByTagName('input');
@@ -31,10 +29,16 @@ function saveAnswers() {
     respostas: answers
   };  
 
+  var code = $('#code').val();
+  if(code == '' || code == null) {
+    alert("Você precisa informar o código gerado no passo anterior.");
+    return false;
+  }
+
   // Envia para a base de dados
-  if(code == ""){
+  if(code == 'generate') {
     code = getCode();
-    firebase.database().ref('users/' + code).set(answerObject)
+    firebase.database().ref(formName + '/' + code).set(answerObject)
       .then(function(snapshot) {
         alert("Dados inseridos com sucesso.");
         $("#codigo").html(code);
@@ -44,10 +48,11 @@ function saveAnswers() {
       alert(error);
     });
   } else {
-    firebase.database().ref('users/' + code).update(answerObject)
+    firebase.database().ref(formName + '/' + code).update(answerObject)
     .then(function(snapshot) {
       alert("Dados atualizados com sucesso.");
       $("#codigo").html(code);
+      $("#next").attr('href', $("#next").attr('href') + code);
       $("#success").show();
     }, function(error) {
     alert(error);
@@ -60,7 +65,7 @@ function saveAnswers() {
 function getCode() {
   var LETTERS = ["A","E","K","L","D","F"];
   var time = (new Date()). getTime() + "";
-
+  var code = "";
   for(i=0; i<time.length; i++) {
     if(i < LETTERS.length)
       code += LETTERS[i];

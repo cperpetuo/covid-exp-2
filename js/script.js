@@ -52,6 +52,7 @@ function createOptions1_7(question, key, value) {
     input.type = 'radio';
     var label = document.createElement("label");
     label.for = input.id;
+    label.className = 'label-1-7';
     label.innerHTML = input.value;
     $(options).append(input);
     $(options).append(label);
@@ -73,6 +74,7 @@ function createOptionsYN(question, key, value) {
   input.type = 'radio';
   var label = document.createElement("label");
   label.for = input.id;
+  label.className = 'label-1-7';
   label.innerHTML = input.value;
   $(div).append(input);
   $(div).append(label);
@@ -85,9 +87,62 @@ function createOptionsYN(question, key, value) {
   input.type = 'radio';
   var label = document.createElement("label");
   label.for = input.id;
+  label.className = 'label-1-7';
   label.innerHTML = input.value;
   $(div).append(input);
   $(div).append(label);
 
   $(question).append(div);
+}
+
+// Cria opcoes de resposta do tipo lista
+function createOptionsList(question, key, value) {
+  
+  var options = document.createElement("div");
+  //options.className = 'options';
+  
+  var list = value.list;
+  for(i=0; i<list.length; i++) {
+    var br = document.createElement("br");
+    var input = document.createElement("input");
+    input.id = value.id + "_" + i;
+    input.name = 'pergunta_' + value.id;
+    input.value = list[i];
+    input.type = 'radio';
+    var label = document.createElement("label");
+    label.for = input.id;
+    label.className = 'lable-list';
+    label.innerHTML = list[i];
+    $(options).append(input);
+    $(options).append(label);
+    $(options).append(br);
+  }
+  $(question).append(options);
+
+}
+
+// Cria opcoes de resposta do tipo check lista
+function createOptionsCheckList(question, key, value) {
+  
+  var options = document.createElement("div");
+  //options.className = 'options';
+  
+  var list = value.list;
+  for(i=0; i<list.length; i++) {
+    var br = document.createElement("br");
+    var input = document.createElement("input");
+    input.id = value.id + "_" + i;
+    input.name = 'pergunta_' + value.id;
+    input.value = list[i];
+    input.type = 'checkbox';
+    var label = document.createElement("label");
+    label.for = input.id;
+    label.className = 'lable-list';
+    label.innerHTML = list[i];
+    $(options).append(input);
+    $(options).append(label);
+    $(options).append(br);
+  }
+  $(question).append(options);
+
 }
