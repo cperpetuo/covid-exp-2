@@ -45,6 +45,7 @@ var questions = [
         id: 7,
         title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet leo maximus, sagittis justo a, vulputate tellus. Aliquam fringilla.',
         description: 'O vírus é relativamente grande, então qualquer tipo de máscara pode filtrá-lo.',
+        options: '1-7',
         type: 'otimista'
     },
     {
