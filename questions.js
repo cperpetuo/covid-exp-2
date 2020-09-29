@@ -378,101 +378,253 @@ var autoengano= [
     {
         id: 401,
         title: 'As questões a seguir tratam de como você se comporta em certas situações. ',
-        description: '1. Minhas primeiras impressões das pessoas geralmente são certas.',
+        description: 'Minhas primeiras impressões das pessoas geralmente são certas.',
         options: '1-7',
         type: 'autoengano'
     },
     {
         id: 402,
-        description: '2. Seria difícil para mim abandonar qualquer um dos meus maus hábitos.',
+        description: 'Seria difícil para mim abandonar qualquer um dos meus maus hábitos.',
         options: '1-7',
         type: 'autoengano'
     },
     {
         id: 403,
-        description: '3. Não quero saber o que as outras pessoas realmente pensam de mim.',
+        description: 'Não quero saber o que as outras pessoas realmente pensam de mim.',
         options: '1-7',
         type: 'autoengano'
     },
     {
         id: 404,
         title: ' ',
-        description: '3. Não quero saber o que as outras pessoas realmente pensam de mim.',
+        description: 'Não quero saber o que as outras pessoas realmente pensam de mim.',
         options: '1-7',
         type: 'autoengano'
     },
     {
         id: 405,
-        description: '4. Nem sempre fui honesto comigo mesmo.',
+        description: 'Nem sempre fui honesto comigo mesmo.',
         options: '1-7',
         type: 'autoengano'
     },
     {
         id: 406,
-        description: '5. Eu sempre sei porque gosto das coisas.',
+        description: 'Eu sempre sei porque gosto das coisas.',
         options: '1-7',
         type: 'autoengano'
     },
     {
         id: 407,
-        description: '6. Meus pensamentos são guiados pelas minhas emoções.',
+        description: 'Meus pensamentos são guiados pelas minhas emoções.',
         options: '1-7',
         type: 'autoengano'
     },
     {
         id: 408,
-        description: '7. Depois de me decidir, outras pessoas raramente me fazem mudar de opinião.',
+        description: 'Depois de me decidir, outras pessoas raramente me fazem mudar de opinião.',
         options: '1-7',
         type: 'autoengano'
     },
     {
         id: 409,
-        description: '8. Não sou um motorista cuidadoso quando ultrapasso o limite de velocidade.',
+        description: 'Não sou um motorista cuidadoso quando ultrapasso o limite de velocidade.',
         options: '1-7',
         type: 'autoengano'
     },
     {
         id: 410,
-        description: '9. Estou totalmente no controle de meu próprio destino.',
+        description: 'Estou totalmente no controle de meu próprio destino.',
         options: '1-7',
         type: 'autoengano'
     },
       {
         id: 411,
-        description: '10. É difícil para mim desligar de um pensamento perturbador.',
+        description: 'É difícil para mim desligar de um pensamento perturbador.',
         options: '1-7',
         type: 'autoengano'
     },
       {
         id: 412,
-        description: '11. Nunca me arrependo de minhas decisões.',
+        description: 'Nunca me arrependo de minhas decisões.',
         options: '1-7',
         type: 'autoengano'
     },
       {
         id: 413,
-        description: '12. Às vezes, perco as coisas porque não consigo me decidir o quanto antes.',
+        description: 'Às vezes, perco as coisas porque não consigo me decidir o quanto antes.',
         options: '1-7',
         type: 'autoengano'
     },
       {
         id: 414,
-        description: '13. A razão pela qual eu voto é porque meu voto pode fazer a diferença.',
+        description: 'A razão pela qual eu voto é porque meu voto pode fazer a diferença.',
         options: '1-7',
         type: 'autoengano'
     },
-      {
+    {
         id: 415,
-        description: '14. Meus pais nem sempre eram justos quando me puniam.',
+        description: 'Meus pais nem sempre eram justos quando me puniam.',
         options: '1-7',
         type: 'autoengano'
     },
-      {
+    {
         id: 416,
-        description: '15. Eu sou uma pessoa completamente racional.',
+        description: 'Eu sou uma pessoa completamente racional.',
         options: '1-7',
         type: 'autoengano'
     },
+    {
+        id: 417,
+        description: 'Raramente aprecio críticas.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 418,
+        description: 'Sou muito confiante quanto aos meus julgamentos.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 419,
+        description: 'Às vezes, duvido de minha capacidade como amante.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 420,
+        description: 'Não me importo se algumas pessoas não gostam de mim.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 421,
+        description: 'Eu nem sempre sei as razões pelas quais faço as coisas que faço.',
+        options: '1-7',
+        type: 'autoengano'
+    },  
+    {
+        id: 422,
+        description: 'Às vezes digo mentiras, se for preciso.',
+        options: '1-7',
+        type: 'autoengano-im'
+    },  
+    {
+        id: 423,
+        description: 'Eu nunca encubro meus erros.',
+        options: '1-7',
+        type: 'autoengano-im'
+    },     
+    {
+        id: 424,
+        description: 'Houve ocasiões em que tirei vantagem de alguém.',
+        options: '1-7',
+        type: 'autoengano-im'
+    },     
+    {
+        id: 425,
+        description: 'Eu nunca falo palavrões',
+        options: '1-7',
+        type: 'autoengano-im'
+    },   
+    {
+        id: 426,
+        description: 'Às vezes, tento me vingar, em vez de perdoar e esquecer.',
+        options: '1-7',
+        type: 'autoengano-im'
+    },   
+    {
+        id: 427,
+        description: 'Eu sempre obedeço às leis, mesmo que seja improvável que seja pego.',
+        options: '1-7',
+        type: 'autoengano-im'
+    },   
+    {
+        id: 428,
+        description: 'Eu disse algo ruim sobre um amigo pelas costas.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 429,
+        description: 'Quando ouço pessoas conversando em particular, evito ouvir.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 430,
+        description: 'Recebi muitas alterações de um vendedor sem informar a ele.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 431,
+        description: 'Eu sempre declaro tudo na alfândega.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 432,
+        description: 'Quando eu era jovem, às vezes roubava coisas.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 433,
+        description: 'Eu nunca joguei lixo na rua.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 434,
+        description: 'Às vezes, dirijo mais rápido que o limite de velocidade.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 435,
+        description: 'Nunca leio livros ou revistas sensuais.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 436,
+        description: 'Eu fiz coisas que não falo para outras pessoas.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 437,
+        description: 'Eu nunca pego coisas que não me pertencem.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 438,
+        description: 'Tirei licença médica do trabalho ou da escola, embora não estivesse realmente doente.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 439,
+        description: 'Nunca danifiquei um livro da biblioteca ou armazenei mercadorias sem reportá-lo.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 440,
+        description: 'Eu tenho hábitos bastante desagradáveis.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }, 
+    {
+        id: 441,
+        description: 'Eu não falo aos outros sobre os assuntos de outras pessoas.',
+        options: '1-7',
+        type: 'autoengano-im'
+    }
+];
+
+
     
-      
     
