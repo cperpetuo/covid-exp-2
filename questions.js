@@ -694,44 +694,44 @@ var cognitiva = [
         title: 'Nesta seção você responderá várias questões. Por favor, responda da forma mais precisa possível.',
         description: 'Um taco e uma bola custam R$ 1,10 no total. O taco custa R$ 1,00 a mais do que a bola. Quanto custa a bola?',
         options: 'open',
-        type: 'cognitiva'
+        type: 'habilidate-cognitiva-crt'
     },
     {
         id: 602,
 	description: 'As idades de Marcos e João somam 28 anos no total. Marcos é 10 anos mais velho do que João. Quantos anos tem João?',
         options: 'open',
-        type: 'cognitiva'
+        type: 'habilidate-cognitiva-crt'
     },
     {
         id: 603,
         description: 'Considerando que 5 impressoras 3D levam 5 minutos para fazer 5 ferramentas, quanto tempo levaria (em minutos) para 100 máquinas para fazer 100 ferramentas?',
         options: 'open',
-        type: 'cognitiva'
+        type: 'habilidate-cognitiva-crt'
     },
     {
         id: 604,
         description: 'Em um bolo, há um pedaço de bolor. Todos os dias, o pedaço de bolor dobra de tamanho. Se demorar 40 dias para que o bolor cubra todo o bolo, quantos dias seriam necessários para que o remendo cubra metade do bolo?',
         options: 'open',
-        type: 'cognitiva'
+        type: 'habilidate-cognitiva-crt'
     },
     {
         id: 605,
         description: 'Se você estivesse correndo uma maratona e você ultrapassasse o terceiro lugar, em qual posição da competição você estaria?',
         options: 'open',
-        type: 'cognitiva'
+        type: 'habilidate-cognitiva-crt'
     },
     {
         id: 606,
         description: 'Um fazendeiro tinha 20 ovelhas, todas exceto 8 morreram. Quantas ovelhas morreram?',
         options: 'open',
-        type: 'cognitiva'
+        type: 'habilidate-cognitiva-crt'
     },
     {
         id: 607,
         description: 'Você já conhecia alguns dos problemas listados anteriormente?',
         options: 'list',
 	list: ['Sim','Não','Talvez'],
-        type: 'cognitiva'
+        type: 'habilidate-cognitiva-crt'
     }
 ];
     
