@@ -300,7 +300,7 @@ var questions_crenças= [
 ];  
     
     
-var questions_demograficas= [    
+var demograficas= [    
     {
         id: 301,
         title: 'As questões a seguir tratam do seu perfil pessoal. Sinta-se à vontade para responder, lembrando que seus dados serão tratados de forma confidencial de forma a preservar sua privacidade e o sigilo das informações disponibilizadas.',
@@ -374,8 +374,105 @@ var questions_demograficas= [
       }, 
     ];
 
-
+var autoengano= [    
+    {
+        id: 401,
+        title: 'As questões a seguir tratam de como você se comporta em certas situações. ',
+        description: '1. Minhas primeiras impressões das pessoas geralmente são certas.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 402,
+        description: '2. Seria difícil para mim abandonar qualquer um dos meus maus hábitos.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 403,
+        description: '3. Não quero saber o que as outras pessoas realmente pensam de mim.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 404,
+        title: ' ',
+        description: '3. Não quero saber o que as outras pessoas realmente pensam de mim.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 405,
+        description: '4. Nem sempre fui honesto comigo mesmo.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 406,
+        description: '5. Eu sempre sei porque gosto das coisas.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 407,
+        description: '6. Meus pensamentos são guiados pelas minhas emoções.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 408,
+        description: '7. Depois de me decidir, outras pessoas raramente me fazem mudar de opinião.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 409,
+        description: '8. Não sou um motorista cuidadoso quando ultrapasso o limite de velocidade.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+    {
+        id: 410,
+        description: '9. Estou totalmente no controle de meu próprio destino.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+      {
+        id: 411,
+        description: '10. É difícil para mim desligar de um pensamento perturbador.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+      {
+        id: 412,
+        description: '11. Nunca me arrependo de minhas decisões.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+      {
+        id: 413,
+        description: '12. Às vezes, perco as coisas porque não consigo me decidir o quanto antes.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+      {
+        id: 414,
+        description: '13. A razão pela qual eu voto é porque meu voto pode fazer a diferença.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+      {
+        id: 415,
+        description: '14. Meus pais nem sempre eram justos quando me puniam.',
+        options: '1-7',
+        type: 'autoengano'
+    },
+      {
+        id: 416,
+        description: '15. Eu sou uma pessoa completamente racional.',
+        options: '1-7',
+        type: 'autoengano'
+    },
     
-    
-    
+      
     
