@@ -827,5 +827,16 @@ var lideranca_partidaria = [
     }
 ];
 
+var vies_confirmacao = [
+    {
+        id: 901,
+        title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo.',
+        description: 'O Presidente Bolsonaro é uma boa fonte de informação sobre o coronavírus.',
+        options: 'list',
+	list: ['Sim','Não'],
+    },	
+	
+	
+
 
     
