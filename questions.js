@@ -22,13 +22,13 @@ var questions = [
         id: 4,
         description: 'Os sintomas do coronavírus têm vida curta.',
         options: '1-7',
-       type: 'otimista'
+        type: 'otimista'
     },
     {
         id: 5,
         description: 'O clima quente impede efetivamente a propagação do coronavírus.',
         options: '1-7',
-      type: 'otimista'
+        type: 'otimista'
     },
     {
         id: 6,
@@ -149,13 +149,6 @@ var questions = [
         description: 'A vacina está sendo desenvolvida para o COVID-19 com o objetivo de injetar microchips nas pessoas.',
         options: '1-7',
         type: 'conspiratoria'
-    },
-    {
-        id: 3,
-        description: 'O coronavírus não sobrevive em plástico ou aço por mais de alguns minutos.',
-        options: 'yes_no',
-        type: 'ciencia',
-        image: 'images/fakenews.jpg'
     }
 ];
 
@@ -316,11 +309,11 @@ var demograficas= [
         list: ['Entre 20 e 29 anos','Entre 30 e 39 anos','Entre 40 e 49 anos','Entre 50 e 59 anos','Acima de 60 anos'],
         type: 'perfil_respondente'
     },
-     {
+    {
         id: 303,
         description: 'Renda Familiar Bruta Mensal (incluindo todas as fontes de renda, tais como: salários, comissões, aluguéis, outros)',
         options: 'list',
-        list: ['até 1.874,00','R$ 1.874,01 a R$ 3.748,00','R$ 3.748,01 a R$ 9.370,00','R$ 9.370,01 a R$ 18.740,00','Acima de R$ 18.740,00'],
+        list: ['até R$ 1.874,00','R$ 1.874,01 a R$ 3.748,00','R$ 3.748,01 a R$ 9.370,00','R$ 9.370,01 a R$ 18.740,00','Acima de R$ 18.740,00'],
         type: 'perfil_respondente'
     },  
     {
