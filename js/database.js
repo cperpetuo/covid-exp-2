@@ -14,7 +14,7 @@ function saveAnswers(formName) {
       var answer = {
         pergunta : name,
         resposta : value,
-        category : category
+        category : category || 'default'
       };
       answers.push(answer);
     }
