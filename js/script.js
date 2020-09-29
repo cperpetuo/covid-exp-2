@@ -48,8 +48,8 @@ function createOptions1_7(question, key, value) {
     var input = document.createElement("input");
     
     var att = document.createAttribute("category");   // Create a "category" attribute
-    att.value = value.type;                           // Set the value of the class attribute
-    input.setAttributeNode(att);                      // Add the class attribute to input
+    att.value = value.category;                       // Set the value of the category attribute
+    input.setAttributeNode(att);                      // Add the category attribute to input
 
     input.id = value.id + "_" + i;
     input.name = 'pergunta_' + value.id;
@@ -75,8 +75,8 @@ function createOptionsYN(question, key, value) {
   var input = document.createElement("input");
     
   var att = document.createAttribute("category");   // Create a "category" attribute
-  att.value = value.type;                           // Set the value of the class attribute
-  input.setAttributeNode(att);                      // Add the class attribute to input
+  att.value = value.category;                       // Set the value of the category attribute
+  input.setAttributeNode(att);                      // Add the category attribute to input
 
   input.id = value.id + "_" + i;
   input.name = 'pergunta_' + value.id;
@@ -93,8 +93,8 @@ function createOptionsYN(question, key, value) {
   var input = document.createElement("input");
     
   var att = document.createAttribute("category");   // Create a "category" attribute
-  att.value = value.type;                           // Set the value of the class attribute
-  input.setAttributeNode(att);                      // Add the class attribute to input
+  att.value = value.category;                       // Set the value of the category attribute
+  input.setAttributeNode(att);                      // Add the category attribute to input
 
   input.id = value.id + "_" + i;
   input.name = 'pergunta_' + value.id;
@@ -122,8 +122,8 @@ function createOptionsList(question, key, value) {
     var input = document.createElement("input");
     
     var att = document.createAttribute("category");   // Create a "category" attribute
-    att.value = value.type;                           // Set the value of the class attribute
-    input.setAttributeNode(att);                      // Add the class attribute to input
+    att.value = value.category;                       // Set the value of the category attribute
+    input.setAttributeNode(att);                      // Add the category attribute to input
 
     input.id = value.id + "_" + i;
     input.name = 'pergunta_' + value.id;
@@ -153,8 +153,8 @@ function createOptionsCheckList(question, key, value) {
     var input = document.createElement("input");
     
     var att = document.createAttribute("category");   // Create a "category" attribute
-    att.value = value.type;                           // Set the value of the class attribute
-    input.setAttributeNode(att);                      // Add the class attribute to input
+    att.value = value.category;                       // Set the value of the category attribute
+    input.setAttributeNode(att);                      // Add the category attribute to input
 
     input.id = value.id + "_" + i;
     input.name = 'pergunta_' + value.id;
