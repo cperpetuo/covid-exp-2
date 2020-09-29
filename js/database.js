@@ -8,9 +8,9 @@ function saveAnswers(formName) {
 
   for(i=0; i< fields.length; i++) {
     if(fields[i].checked) {
-      var name = fields[i].name;
+      var name = fields[i].name.split('_')[1];
       var value = fields[i].value;
-      var category = fields[i].category;
+      var category = fields[i].getAttribute("category");
       var answer = {
         pergunta : name,
         resposta : value,
