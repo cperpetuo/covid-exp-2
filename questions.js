@@ -1,3 +1,6 @@
+/* *********************************
+*  Questoes sore Percepcao
+************************************ */
 var questions = [
     {
         id: 1,
@@ -152,6 +155,9 @@ var questions = [
     }
 ];
 
+/* *********************************
+*  Questoes sore Risco
+************************************ */
 var questions_risk = [
     {
         id: 101,
@@ -198,6 +204,9 @@ var questions_risk = [
     }
 ];
 
+/* *********************************
+*  Questoes sore Crencas
+************************************ */
 var questions_crenças= [    
     {
         id: 201,
@@ -292,7 +301,9 @@ var questions_crenças= [
     }    
 ];  
     
-    
+/* *********************************
+*  Questoes Demograficas
+************************************ */    
 var demograficas= [    
     {
         id: 301,
@@ -367,6 +378,9 @@ var demograficas= [
      }, 
 ];
 
+/* *********************************
+*  Questoes sobre Autoengano
+************************************ */  
 var autoengano= [    
     {
         id: 401,
@@ -618,6 +632,9 @@ var autoengano= [
     }
 ];
 
+/* ************************************
+*  Questoes sobre Autoengano da Autora
+*************************************** */  
 var autoengano_autora = [
     {
         id: 501,
@@ -687,7 +704,10 @@ var autoengano_autora = [
         category: 'autoengano-autora'
     }
 ];
-    
+
+/* **************************************
+*  Questoes sobre Habilidades Cognitivas
+***************************************** */  
 var cognitiva = [
     {
         id: 601,
