@@ -12,17 +12,17 @@ function createQuestion(count, key, value) {
     count = 1;
   }
 
-  var description = document.createElement("p");
-  description.className = 'description';
-  description.innerHTML = count + ') ' + value.description;
-  $(question).append(description);
-
   // Inclui a imagem na pergunta
   if(value.image){
     var image = document.createElement('img');
     image.src = value.image;
     $(question).append(image);
   }
+
+  var description = document.createElement("p");
+  description.className = 'description';
+  description.innerHTML = count + ') ' + value.description;
+  $(question).append(description);
 
   return question;
 }
