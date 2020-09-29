@@ -827,16 +827,30 @@ var lideranca_partidaria = [
     }
 ];
 
-var vies_confirmacao = [
+var vies_confirmacao_1= [
     {
         id: 901,
-        title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo.',
-        description: 'O Presidente Bolsonaro é uma boa fonte de informação sobre o coronavírus.',
+        title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito.', 
+        description: 'De arcordo com o seu conhecimento, esta mensagem é verdadeira ou falsa?',
+        options: 'list',
+	list: ['Verdadeira','Falsa'],
+	image: 'images/Cloroquina.jpg'	  
+    },	
+    {
+        id: 902,
+        title: ' ',
+        description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
 	list: ['Sim','Não'],
     },	
-	
-	
-
+    {
+        id: 903,
+        title: ' ',
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        options: 'list',
+	list: ['Sim','Não','talvez'],
+     }	
+  ];
+   
 
     
