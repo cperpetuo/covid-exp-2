@@ -848,7 +848,7 @@ var vies_confirmacao_1 = [
         title: ' ',
         description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
         options: 'list',
-	list: ['Sim','Não','talvez'],
+	list: ['Sim','Não','Talvez'],
      }	
   ];
   
