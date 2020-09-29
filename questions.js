@@ -1,7 +1,7 @@
 /* *********************************
 *  Questoes sore Percepcao
 ************************************ */
-var questions = [
+var perceptions = [
     {
         id: 1,
         title: 'Para responder as questões a seguir, use a escala fornecida abaixo, pensando na sua percepção em relação ao COVID-19.',
@@ -158,7 +158,7 @@ var questions = [
 /* *********************************
 *  Questoes sore Risco
 ************************************ */
-var questions_risk = [
+var risk = [
     {
         id: 101,
         title: 'Para responder às questões a seguir, use a escala fornecida abaixo, pensando nos receios/riscos que você sente(iu) em sua experiência durante a pandemia.',
@@ -207,7 +207,7 @@ var questions_risk = [
 /* *********************************
 *  Questoes sore Crencas
 ************************************ */
-var questions_crenças= [    
+var beliefs = [    
     {
         id: 201,
         title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
@@ -304,7 +304,7 @@ var questions_crenças= [
 /* *********************************
 *  Questoes Demograficas
 ************************************ */    
-var demograficas= [    
+var demographics = [    
     {
         id: 301,
         title: 'As questões a seguir tratam do seu perfil pessoal. Sinta-se à vontade para responder, lembrando que seus dados serão tratados de forma confidencial de forma a preservar sua privacidade e o sigilo das informações disponibilizadas.',
@@ -381,7 +381,7 @@ var demograficas= [
 /* *********************************
 *  Questoes sobre Autoengano
 ************************************ */  
-var autoengano= [    
+var selfdeception = [    
     {
         id: 401,
         title: 'As questões a seguir tratam de como você se comporta em certas situações. ',
@@ -635,7 +635,7 @@ var autoengano= [
 /* ************************************
 *  Questoes sobre Autoengano da Autora
 *************************************** */  
-var autoengano_autora = [
+var selfdeception_author = [
     {
         id: 501,
         title: 'Responda como você se identifica ao se deparar com as mensagens da COVID-19 pela mídia social.',
@@ -708,7 +708,7 @@ var autoengano_autora = [
 /* **************************************
 *  Questoes sobre Habilidades Cognitivas
 ***************************************** */  
-var cognitiva = [
+var cognitiveskills = [
     {
         id: 601,
         title: 'Nesta seção você responderá várias questões. Por favor, responda da forma mais precisa possível.',
