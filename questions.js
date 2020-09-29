@@ -838,14 +838,12 @@ var vies_confirmacao_1 = [
     },	
     {
         id: 902,
-        title: ' ',
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
 	list: ['Sim','Não'],
     },	
     {
         id: 903,
-        title: ' ',
         description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
         options: 'list',
 	list: ['Sim','Não','Talvez'],
