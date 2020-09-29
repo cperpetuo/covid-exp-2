@@ -191,7 +191,7 @@ var questions_risk = [
         options: '1-7',
         type: 'risco_social'
     },
-     {
+    {
         id: 106,
         description: 'O COVID-19 representa um grande risco à saúde do meu estado.',
         options: '1-7',
@@ -279,7 +279,7 @@ var questions_crenças= [
         options: '1-7',
         type: 'distanciamento'
     },   
-   {
+    {
         id: 213,
         description: 'Em geral, segui as diretrizes do governo relacionadas ao distanciamento social. ',
         options: '1-7',
@@ -372,7 +372,7 @@ var demograficas= [
         list: ['BBC News', 'G1', 'Secom','OMS','CNN', 'TV Senado', 'Google News', 'Outros'],
         type: 'perfil_respondente'
       }, 
-    ];
+];
 
 var autoengano= [    
     {
@@ -437,25 +437,25 @@ var autoengano= [
         options: '1-7',
         type: 'autoengano'
     },
-      {
+    {
         id: 411,
         description: 'É difícil para mim desligar de um pensamento perturbador.',
         options: '1-7',
         type: 'autoengano'
     },
-      {
+    {
         id: 412,
         description: 'Nunca me arrependo de minhas decisões.',
         options: '1-7',
         type: 'autoengano'
     },
-      {
+    {
         id: 413,
         description: 'Às vezes, perco as coisas porque não consigo me decidir o quanto antes.',
         options: '1-7',
         type: 'autoengano'
     },
-      {
+    {
         id: 414,
         description: 'A razão pela qual eu voto é porque meu voto pode fazer a diferença.',
         options: '1-7',
@@ -695,5 +695,50 @@ var autoengano_autora = [
     }
 ];
     
-
+var cognitiva = [
+    {
+        id: 601,
+        title: 'Nesta seção você responderá várias questões. Por favor, responda da forma mais precisa possível.',
+        description: 'Um taco e uma bola custam R$ 1,10 no total. O taco custa R$ 1,00 a mais do que a bola. Quanto custa a bola?',
+        options: 'open',
+        type: 'cognitiva'
+    },
+    {
+        id: 602,
+		description: 'As idades de Marcos e João somam 28 anos no total. Marcos é 10 anos mais velho do que João. Quantos anos tem João?',
+        options: 'open',
+        type: 'cognitiva'
+    },
+    {
+        id: 603,
+        description: 'Considerando que 5 impressoras 3D levam 5 minutos para fazer 5 ferramentas, quanto tempo levaria (em minutos) para 100 máquinas para fazer 100 ferramentas?',
+        options: 'open',
+        type: 'cognitiva'
+    },
+    {
+        id: 604,
+        description: 'Em um bolo, há um pedaço de bolor. Todos os dias, o pedaço de bolor dobra de tamanho. Se demorar 40 dias para que o bolor cubra todo o bolo, quantos dias seriam necessários para que o remendo cubra metade do bolo?',
+        options: 'open',
+        type: 'cognitiva'
+    },
+    {
+        id: 605,
+        description: 'Se você estivesse correndo uma maratona e você ultrapassasse o terceiro lugar, em qual posição da competição você estaria?',
+        options: 'open',
+        type: 'cognitiva'
+    },
+    {
+        id: 606,
+        description: 'Um fazendeiro tinha 20 ovelhas, todas exceto 8 morreram. Quantas ovelhas morreram?',
+        options: 'open',
+        type: 'cognitiva'
+    },
+    {
+        id: 607,
+        description: 'Você já conhecia alguns dos problemas listados anteriormente?',
+        options: 'list',
+		list: ['Sim','Não','Talvez'],
+        type: 'cognitiva'
+    }
+];
     
