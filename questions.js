@@ -625,6 +625,75 @@ var autoengano= [
     }
 ];
 
-
+var autoengano_autora = [
+    {
+        id: 501,
+        title: 'Responda como você se identifica ao se deparar com as mensagens da COVID-19 pela mídia social.',
+        description: 'Não vejo o vírus do COVID-19 como um risco para mim.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 502,
+        description: 'Eu tento esquecer do impacto do vírus.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 503,
+        description: 'Evito acessar fontes de notícias que não me agradam.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 504,
+        description: 'Considero as notícias compartilhadas pelos meus grupos sociais como verdadeiras.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 505,
+        description: 'Confio nas mensagens comunicadas pela mídia.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 506,
+        description: 'Avalio com cautela as informações antes de encaminhá-las, tais como julgamento de fonte segura.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 507,
+        description: 'Sinto-me motivada a compartilhar as informações encaminhadas por meus grupos sociais.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 508,
+        description: 'Ao ler uma mensagem em minha rede social verifico quantas pessoas reagiram e isto me basta para concluir que a mensagem é verdadeira.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 509,
+        description: 'Sinto que tenho conhecimento satisfatório sobre o assunto, com condições intelectuais e autoconfiança em avaliar as mensagens, não havendo a necessidade de verificar outras fontes.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 510,
+        description: 'Sinto que tenho autocontrole, não deixo que as emoções e que outras pessoas influenciem no meu julgamento. ',
+        options: '1-7',
+        type: 'autoengano-autora'
+    },
+    {
+        id: 511,
+        description: 'Na dúvida confio nos meus instintos.',
+        options: '1-7',
+        type: 'autoengano-autora'
+    }
+];
     
+
     
