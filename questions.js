@@ -705,7 +705,7 @@ var cognitiva = [
     },
     {
         id: 602,
-		description: 'As idades de Marcos e João somam 28 anos no total. Marcos é 10 anos mais velho do que João. Quantos anos tem João?',
+	description: 'As idades de Marcos e João somam 28 anos no total. Marcos é 10 anos mais velho do que João. Quantos anos tem João?',
         options: 'open',
         type: 'cognitiva'
     },
@@ -737,7 +737,7 @@ var cognitiva = [
         id: 607,
         description: 'Você já conhecia alguns dos problemas listados anteriormente?',
         options: 'list',
-		list: ['Sim','Não','Talvez'],
+	list: ['Sim','Não','Talvez'],
         type: 'cognitiva'
     }
 ];
