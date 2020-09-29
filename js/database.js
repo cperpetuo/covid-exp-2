@@ -10,9 +10,11 @@ function saveAnswers(formName) {
     if(fields[i].checked) {
       var name = fields[i].name;
       var value = fields[i].value;
+      var category = fields[i].category;
       var answer = {
         pergunta : name,
-        resposta : value
+        resposta : value,
+        category : category
       };
       answers.push(answer);
     }
