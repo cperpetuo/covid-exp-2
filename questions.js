@@ -834,7 +834,7 @@ var vies_confirmacao_1 = [
         description: 'De arcordo com o seu conhecimento, esta mensagem é verdadeira ou falsa?',
         options: 'list',
 	list: ['Verdadeira','Falsa'],
-	image: 'images/Cloroquina.jpg'	  
+	image: 'images/Cloroquina.jpg',	  
     },	
     {
         id: 902,
@@ -849,4 +849,92 @@ var vies_confirmacao_1 = [
 	list: ['Sim','Não','Talvez'],
      }	
   ];
-  
+
+  var vies_confirmacao_2 = [
+    {
+        id: 901,
+        title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito.', 
+        description: 'De arcordo com o seu conhecimento, esta mensagem é verdadeira ou falsa?',
+        options: 'list',
+	list: ['Verdadeira','Falsa'],
+	image: 'images/gripezinha_bolsonaro',	  
+    },	
+    {
+        id: 902,
+        description: 'Você concorda com a mensagem disponibilizada?',
+        options: 'list',
+	list: ['Sim','Não'],
+    },	
+    {
+        id: 903,
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        options: 'list',
+	list: ['Sim','Não','Talvez'],
+     }	
+  ];
+ var vies_confirmacao_3 = [
+    {
+        id: 901,
+        title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito.', 
+        description: 'De arcordo com o seu conhecimento, esta mensagem é verdadeira ou falsa?',
+        options: 'list',
+	list: ['Verdadeira','Falsa'],
+	image: 'images/covid-19 - criado em laboratorio',	  
+    },	
+    {
+        id: 902,
+        description: 'Você concorda com a mensagem disponibilizada?',
+        options: 'list',
+	list: ['Sim','Não'],
+    },	
+    {
+        id: 903,
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        options: 'list',
+	list: ['Sim','Não','Talvez'],
+     }	
+  ];
+ var vies_confirmacao_4 = [
+    {
+        id: 901,
+        title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito.', 
+        description: 'De arcordo com o seu conhecimento, esta mensagem é verdadeira ou falsa?',
+        options: 'list',
+	list: ['Verdadeira','Falsa'],
+	image: 'images/ivermectina'	  
+    },	
+    {
+        id: 902,
+        description: 'Você concorda com a mensagem disponibilizada?',
+        options: 'list',
+	list: ['Sim','Não'],
+    },	
+    {
+        id: 903,
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        options: 'list',
+	list: ['Sim','Não','Talvez'],
+     }	
+  ];
+var vies_confirmacao_5 = [
+    {
+        id: 901,
+        title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito.', 
+        description: 'De arcordo com o seu conhecimento, esta mensagem é verdadeira ou falsa?',
+        options: 'list',
+	list: ['Verdadeira','Falsa'],
+	image: 'images/vitamina_D'	  
+    },	
+    {
+        id: 902,
+        description: 'Você concorda com a mensagem disponibilizada?',
+        options: 'list',
+	list: ['Sim','Não'],
+    },	
+    {
+        id: 903,
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        options: 'list',
+	list: ['Sim','Não','Talvez'],
+     }	
+  ];
