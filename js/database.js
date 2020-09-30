@@ -1,5 +1,5 @@
 // Insere todas as respostas na base de dados
-function saveAnswers(formName) {
+function saveAnswers(formName, questions) {
  
   // Obtem as respostas selecionadas
   var fields = document.getElementsByTagName('input');
