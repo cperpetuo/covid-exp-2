@@ -127,11 +127,6 @@ function createOptionsOpen(question, key, value) {
   input.name = 'pergunta_' + value.id;
   input.value = '';
   input.type = 'text';
-  var label = document.createElement("label");
-  label.for = input.id;
-  //label.className = 'label-1-7';
-  label.innerHTML = 'Resposta';
-  $(div).append(label);
   $(div).append(input);
 
   $(question).append(div);
