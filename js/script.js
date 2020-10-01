@@ -114,7 +114,7 @@ function createOptionsYN(question, key, value) {
 function createOptionsOpen(question, key, value) {
 
   var div = document.createElement("div");
-  div.className = 'center options';
+  div.className = 'options';
 
   // Sim
   var input = document.createElement("input");
@@ -131,8 +131,8 @@ function createOptionsOpen(question, key, value) {
   label.for = input.id;
   //label.className = 'label-1-7';
   label.innerHTML = 'Resposta';
-  $(div).append(input);
   $(div).append(label);
+  $(div).append(input);
 
   $(question).append(div);
 }
