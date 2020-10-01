@@ -27,6 +27,21 @@ function createQuestion(count, key, value) {
   return question;
 }
 
+// Opcoes de resposta
+function createOptions(question, key, value) {
+
+  if(value.options == '1-7')
+    var options = createOptions1_7(question, key, value);
+  else if(value.options == 'yes_no')
+    var options = createOptionsYN(question, key, value);
+  else if(value.options == 'list')
+    var options = createOptionsList(question, key, value);
+  else if(value.options == 'check-list')
+    var options = createOptionsCheckList(question, key, value);
+  else if(value.options == 'open')
+    var options = createOptionsOpen(question, key, value);
+}
+
 // Cria opcoes de resposta do tipo (discordo) 1 - 7 (concordo)
 function createOptions1_7(question, key, value) {
 

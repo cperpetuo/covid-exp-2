@@ -1,3 +1,18 @@
+// Your web app's Firebase configuration
+function firebaseConfiguration() {
+  var firebaseConfig = {
+    apiKey: "AIzaSyCDoF7uuat1KKsxidYXieg1r_B5ql9yLx4",
+    authDomain: "covid-survey-7a0c6.firebaseapp.com",
+    databaseURL: "https://covid-survey-7a0c6.firebaseio.com",
+    projectId: "covid-survey-7a0c6",
+    storageBucket: "covid-survey-7a0c6.appspot.com",
+    messagingSenderId: "216921647928",
+    appId: "1:216921647928:web:a2ef9d08c002050379efcd"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+}
+
 // Insere todas as respostas na base de dados
 function saveAnswers(formName, questions) {
  
