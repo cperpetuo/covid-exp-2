@@ -389,7 +389,6 @@ var autoengano = [
     },
     {
         id: 404,
-        title: ' ',
         description: 'Não quero saber o que as outras pessoas realmente pensam de mim.',
         options: '1-7',
         category: 'autoengano'
