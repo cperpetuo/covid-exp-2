@@ -73,6 +73,8 @@
           var options = createOptionsList(question, key, value);
         else if(value.options == 'check-list')
           var options = createOptionsCheckList(question, key, value);
+        else if(value.options == 'open')
+          var options = createOptionsOpen(question, key, value);
 
         // Incrementa pergunta
         count++;
