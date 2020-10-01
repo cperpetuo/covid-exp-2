@@ -125,6 +125,7 @@ function createOptionsOpen(question, key, value) {
 
   input.id = value.id;
   input.name = 'pergunta_' + value.id;
+  input.className = 'open';
   input.value = '';
   input.type = 'text';
   $(div).append(input);
