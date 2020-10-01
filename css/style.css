@@ -72,9 +72,10 @@
   .code {
     padding: 20px;
     text-align: center;
+    display: none;
   }
   
-  input[type=text], input.text {
+  input[type=text], input.text, input[type=textarea], input.textarea {
     height: 30px;
     width: 300px;
     font-size: 20pt;

@@ -7,7 +7,7 @@ function saveAnswers(formName, questions) {
   var answers = new Array();
 
   for(i=0; i< fields.length; i++) {
-    if(((fileds[i].type == 'radio' || fileds[i].type == 'checkbox') && fields[i].checked) || (fileds[i].type == 'text' && fields[i].value != '')) {
+    if(((fields[i].type == 'radio' || fields[i].type == 'checkbox') && fields[i].checked) || (fields[i].type == 'text' && fields[i].value != '')) {
       var name = fields[i].name.split('_')[1];
       var value = fields[i].value;
       var category = fields[i].getAttribute("category");
@@ -18,6 +18,13 @@ function saveAnswers(formName, questions) {
       };
       answers.push(answer);
     }
+  }
+
+  for(i=0; i<answers.length; i++) {    
+    
+    var a = answers[i];
+    console.log(a.pergunta + ',' + a.resposta + ',' + a.category);
+    
   }
 
   // Valida se todas as perguntas foram respondidas
