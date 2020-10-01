@@ -123,7 +123,7 @@ function createOptionsOpen(question, key, value) {
   att.value = value.category;                       // Set the value of the category attribute
   input.setAttributeNode(att);                      // Add the category attribute to input
 
-  input.id = value.id + "_" + i;
+  input.id = value.id;
   input.name = 'pergunta_' + value.id;
   input.value = '';
   input.type = 'text';
