@@ -110,6 +110,33 @@ function createOptionsYN(question, key, value) {
   $(question).append(div);
 }
 
+// Cria input para resposta aberta
+function createOptionsOpen(question, key, value) {
+
+  var div = document.createElement("div");
+  div.className = 'center options';
+
+  // Sim
+  var input = document.createElement("input");
+    
+  var att = document.createAttribute("category");   // Create a "category" attribute
+  att.value = value.category;                       // Set the value of the category attribute
+  input.setAttributeNode(att);                      // Add the category attribute to input
+
+  input.id = value.id + "_" + i;
+  input.name = 'pergunta_' + value.id;
+  input.value = 'Sim';
+  input.type = 'text';
+  var label = document.createElement("label");
+  label.for = input.id;
+  label.className = 'label-1-7';
+  label.innerHTML = input.value;
+  $(div).append(input);
+  $(div).append(label);
+
+  $(question).append(div);
+}
+
 // Cria opcoes de resposta do tipo lista
 function createOptionsList(question, key, value) {
   
