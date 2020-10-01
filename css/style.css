@@ -86,7 +86,7 @@
   input[type=text].open, input.text.open {
     height: 30px;
     width: 300px;
-    font-size: 20pt;
+    font-size: 12pt;
     font-weight: normal;
     text-align: left;
     color: black;
