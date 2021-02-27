@@ -24,41 +24,5 @@
     <p>Siga para a <a id='next' href="index1.html?code=">Inicie a pesquisa</a></p>
   </div>
 
-  <div id="success" class="content" style="display: none;">
-    <p>Obrigado por colaborar com a pesquisa. Anote o código abaixo para resgatar o seu prêmio.</p>
-    <p id="codigo"></p>
-    <p>Siga para a <a id='next' href="index2.html?code=">próxima etapa</a></p>
-  </div>
-
-  <div class="center"><button onclick="saveAnswers('percepcoes',questions)">Enviar respostas</button></div>
-  
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
-
-  <script>
-
-    $('document').ready(function() {
-
-      // Your web app's Firebase configuration
-      firebaseConfiguration();
-
-      var count = 1;
-      $.each( questions, function( key, value ) {
-
-        // Pergunta
-        var question = createQuestion(count, key, value);
-        $("#content").append(question);
-
-        // Opcoes de resposta
-        createOptions(question, key, value);
-
-        // Incrementa pergunta
-        count++;
-
-      });
-    });
-  </script>
-
 </body>
 </html>
