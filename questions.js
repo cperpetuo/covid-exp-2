@@ -12,7 +12,7 @@ var questions = [
         options: '1-7',
         category: 'otimista'
     },
-    {
+ /*   {
         id: 3,
         description: 'O coronavírus não sobrevive em plástico ou aço por mais de alguns minutos.',
         options: '1-7',
@@ -23,7 +23,7 @@ var questions = [
         description: 'Os sintomas do coronavírus têm vida curta.',
         options: '1-7',
         category: 'otimista'
-    },
+    }, */
     {
         id: 5,
         description: 'O clima quente impede efetivamente a propagação do coronavírus.',
@@ -48,12 +48,12 @@ var questions = [
         options: '1-7',
         category: 'otimista'
     },
-    {
+/*  {
         id: 9,
         description: 'O coronavírus não é transportado pelo ar.',
         options: '1-7',
         category: 'otimista'
-    },
+    }, */
     {
         id: 10,
         description: 'Cães e gatos podem contrair e espalhar o coronavírus.',
@@ -153,7 +153,7 @@ var questions = [
 ];
 
 var questions_crencas= [    
-    {
+    /*{
         id: 201,
         title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
         description: 'Tenho acompanhado de perto as notícias relacionadas ao COVID-19.',
@@ -189,7 +189,7 @@ var questions_crencas= [
         description: 'Confio na maneira como a mídia cobriu a história do COVID-19.',
         options: '1-7',
         category: 'midia'
-    },
+    },*/
     {
         id: 207,
         description: 'A ciência nos fornece uma melhor compreensão do universo do que a religião. ',
@@ -421,7 +421,7 @@ var cognitiva_AOT = [
 ];
 
 
-var lideranca_partidaria = [
+/*var lideranca_partidaria = [
     {
         id: 801,
         title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinão, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
@@ -459,7 +459,7 @@ var lideranca_partidaria = [
         options: 'open',
         category: 'lideranca-partidaria'
     }
-];
+];*/
 
 var vies_confirmacao_1 = [
     {
