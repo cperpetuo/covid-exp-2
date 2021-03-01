@@ -1,195 +1,106 @@
 var questions = [
     {
         id: 1,
-        title: 'Para responder as questões a seguir, use a escala fornecida abaixo, pensando na sua percepção em relação ao COVID-19.',
-        description: 'A gripe sazonal é tão perigosa quanto o coronavírus.',
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',',
+        description: 'A obtenção de vacinas é uma boa maneira de proteger a mim e minha futura criança(s) de doença.',
         options: '1-7',
-        category: 'otimista'
+        category: ''
     },
     {
         id: 2,
-        description: 'Você só pode espalhar o coronavírus se estiver doente.',
+        description: 'Geralmente eu faria o que meu médico recomenda sobre vacinas.',
         options: '1-7',
-        category: 'otimista'
+        category: ''
     },
- /*   {
+    {
         id: 3,
-        description: 'O coronavírus não sobrevive em plástico ou aço por mais de alguns minutos.',
+        description: 'As novas vacinas só são recomendadas se forem tão seguras quanto as vacinas mais antigas.',
         options: '1-7',
-        category: 'otimista'
+        category: ''
     },
     {
         id: 4,
-        description: 'Os sintomas do coronavírus têm vida curta.',
+        description: 'Meu(s) futuro(s) filho(s) não precisará(ão) de vacinas para doenças que já não são mais comuns.',
         options: '1-7',
-        category: 'otimista'
-    }, */
+        category: ''
+    }, 
     {
         id: 5,
-        description: 'O clima quente impede efetivamente a propagação do coronavírus.',
+        description: 'Os pais devem ter o direito de recusar vacinas que são necessárias para a escola por qualquer razão.',
         options: '1-7',
-        category: 'otimista'
+        category: ''
     },
     {
         id: 6,
-        description: 'Você pode dizer quase imediatamente (dentro de um dia) se você contraiu o coronavírus.',
+        description: 'Tantas crianças são vacinadas que minha futura(s) criança(s) estará(ão) segura(s) destas doenças, mesmo se eu não os vacinarei.',
         options: '1-7',
-        category: 'otimista'
+        category: ''
     },
     {
         id: 7,
-        description: 'O vírus é relativamente grande, então qualquer tipo de máscara pode filtrá-lo.',
+        description: 'Os graves efeitos adversos das vacinas me preocupam.',
         options: '1-7',
-        category: 'otimista'
+        category: ''
     },
     {
         id: 8,
-        description: 'O coronavírus permanece vivo na sua mão por cerca de 5 a 10 minutos.',
+        description: 'Algumas vacinas causam autismo em crianças saudáveis.',
         options: '1-7',
-        category: 'otimista'
+        category: ''
     },
-/*  {
+   {
         id: 9,
-        description: 'O coronavírus não é transportado pelo ar.',
+        description: 'Tenho receio de tomar a vacina e de me contaminar com o coronavírus.',
         options: '1-7',
-        category: 'otimista'
-    }, */
+        category: ''
+    }, 
     {
         id: 10,
-        description: 'Cães e gatos podem contrair e espalhar o coronavírus.',
+        description: 'A vacina pode provavelmente causar outras doenças.',
         options: '1-7',
-        category: 'pessimista'
+        category: ''
     },
     {
         id: 11,
-        description: 'A grande maioria das pessoas que contraem o coronavírus precisará ser hospitalizada.',
+        description: 'A  vacina pode conter chips implantados para controle da população.',
         options: '1-7',
-        category: 'pessimista'
+        category: ''
     },
     {
         id: 12,
-        description: 'O coronavírus mata a maioria das pessoas que o contraem.',
+        description: 'A vacina pode alterar nosso DNA.',
         options: '1-7',
-        category: 'pessimista'
+        category: ''
     },
     {
         id: 13,
-        description: 'A maioria das pessoas provavelmente entrará em contato com o coronavírus simplesmente saindo de casa e dando uma volta.',
+        description: 'A vacina é produzida a partir de células de fetos abortados.',
         options: '1-7',
-        category: 'pessimista'
+        category: ''
     },
     {
         id: 14,
-        description: 'A vitamina C pode curar o coronavírus.',
+        description: 'Nenhuma dessas razões indicam minha ideia e/ou comportamento sobre vacinas.',
         options: '1-7',
-        category: 'mistico'
-    },
+        category: ''
+    };
+    
+var questions_intencao_vacina= [    
     {
-        id: 15,
-        description: 'Prender a respiração por 10 segundos sem desconforto é uma maneira eficaz de testar se você tem coronavírus.',
-        options: '1-7',
-        category: 'mistico'
-    },
-    {
-        id: 16,
-        description: 'A hidroxicloroquina mostrou-se um medicamento eficaz no tratamento do coronavírus.',
-        options: '1-7',
-        category: 'mistico'
-    },
-    {
-        id: 17,
-        description: 'Ivermectina ajuda na prevenção ou cura do coronavírus.',
-        options: '1-7',
-        category: 'mistico'
-    },
-    {
-        id: 18,
-        description: 'O gargarejo com água morna e sal ou vinagre, elimina o coronavírus.',
-        options: '1-7',
-        category: 'mistico'
-    },
-    {
-        id: 19,
-        description: 'O coronavírus foi criado em um laboratório.',
-        options: '1-7',
-        category: 'conspiratoria'
-    },
-    {
-        id: 20,
-        description: 'O coronavírus foi criado para ser uma arma biológica.',
-        options: '1-7',
-        category: 'conspiratoria'
-    },
-    {
-        id: 21,
-        description: 'Uma cura para o coronavírus já foi descoberta, mas está sendo suprimida por pessoas que desejam que a pandemia continue.',
-        options: '1-7',
-        category: 'conspiratoria'
-    },
-    {
-        id: 22,
-        description: 'O coronavírus é provavelmente uma farsa.',
-        options: '1-7',
-        category: 'conspiratoria'
-    },
-    {
-        id: 23,
-        description: 'As ondas eletromagnéticas da tecnologia do 5G enfraquecem a imunidade e aumentam o risco de contrair o coronavírus.',
-        options: '1-7',
-        category: 'conspiratoria'
-    }, 
-    {
-        id: 24,
-        description: 'O coronavírus foi inventado para esconder os perigos do 5G.',
-        options: '1-7',
-        category: 'conspiratoria'
-    },
-    {
-        id: 25,
-        description: 'A vacina está sendo desenvolvida para o COVID-19 com o objetivo de injetar microchips nas pessoas.',
-        options: '1-7',
-        category: 'conspiratoria'
-    }
-];
-
-var questions_crencas= [    
-    /*{
         id: 201,
-        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
-        description: 'Tenho acompanhado de perto as notícias relacionadas ao COVID-19.',
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
+        description: 'Qual a sua intenção de  tomar a vacina e vacinar sua família contra a covid-19 quando estiver disponível?',
         options: '1-7',
-        category: 'autoconhecimento'
+        category: ''
     },
     {
         id: 202,
-        description: 'Estou bem informado sobre a questão do COVID-19.',
+        description: 'Baseado em seus conhecimentos, quão provável que ao se vacinar contra a covid-19 você venha a sofrer complicações de saúde?',
         options: '1-7',
-        category: 'autoconhecimento'
+        category: ''
     },
-    {
-        id: 203,
-        description: 'A mídia tem sido precisa na cobertura do COVID-19.',
-        options: '1-7',
-        category: 'midia'
-    },
-    {
-        id: 204,
-        description: 'A mídia exagerou a severidade do COVID-l9 [pontuação inversa].',
-        options: '1-7',
-        category: 'midia'
-    },
-    {
-        id: 205,
-        description: 'A mídia exagerou no COVID-19 para confrontar o presidente Jair Bolsonaro.',
-        options: '1-7',
-        category: 'midia'
-    },
-    {
-        id: 206,
-        description: 'Confio na maneira como a mídia cobriu a história do COVID-19.',
-        options: '1-7',
-        category: 'midia'
-    },*/
+   
+var questios_ciencia= [
     {
         id: 207,
         description: 'A ciência nos fornece uma melhor compreensão do universo do que a religião. ',
@@ -341,12 +252,6 @@ var cognitiva_CRT = [
         options: 'open',
         category: 'habilidate-cognitiva-crt'
     },
-//   {
-//        id: 604,
-//        description: 'Em um bolo, há um pedaço de bolor. Todos os dias, o pedaço de bolor dobra de tamanho. Se demorar 40 dias para que o bolor cubra todo o bolo, quantos dias seriam necessários para que o remendo cubra metade do bolo?',
-//        options: 'open',
-//        category: 'habilidate-cognitiva-crt'
-//   },
     {
         id: 605,
         description: 'Se você estivesse correndo uma maratona e você ultrapassasse o terceiro lugar, em qual posição da competição você estaria?',
@@ -461,14 +366,14 @@ var cognitiva_AOT = [
     }
 ];*/
 
-var vies_confirmacao_1 = [
+var debias_mito_1 = [
     {
         id: 901,
         title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito.', 
-        description: 'De arcordo com o seu conhecimento, esta mensagem é verdadeira ou falsa?',
+        description: 'Neste experimento você irá ler algumas declarações que constratam mitos e fatos sobre vacinas. Você pode passar por elas de acordo com seu próprio ritmo. Clique em “próximo” para seguir',
         options: 'list',
-	list: ['Verdadeira','Falsa'],
-	image: 'images/Cloroquina.jpg',	  
+	list: '',
+	image: 'images/mito-1.jpg',	  
     },	
     {
         id: 902,
@@ -484,7 +389,7 @@ var vies_confirmacao_1 = [
      }	
   ];
 
-  var vies_confirmacao_2 = [
+  var debias_mito_2 = [
     {
         id: 901,
         title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito.', 
@@ -506,7 +411,7 @@ var vies_confirmacao_1 = [
 	list: ['Sim','Não','Talvez'],
      }	
   ];
- var vies_confirmacao_3 = [
+ var debias_mito_3 = [
     {
         id: 901,
         title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito.', 
