@@ -372,7 +372,7 @@ var debias_mito_1 = [
         title: 'Na sequência serão apresentadas algumas mensagens que circularam pela mídia social. Para cada uma delas você deve avaliar se é verdade de acordo com seu conhecimento e sua opinão a respeito.', 
         description: 'Neste experimento você irá ler algumas declarações que constratam mitos e fatos sobre vacinas. Você pode passar por elas de acordo com seu próprio ritmo. Clique em “próximo” para seguir',
         options: 'list',
-	list: '',
+	list: ['Sim','Não'],
 	image: 'images/mito-1.jpg',	  
     },	
     {
