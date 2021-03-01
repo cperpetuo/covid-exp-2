@@ -1,7 +1,7 @@
 var questions = [
     {
         id: 1,
-        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',',
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
         description: 'A obtenção de vacinas é uma boa maneira de proteger a mim e minha futura criança(s) de doença.',
         options: '1-7',
         category: ''
@@ -83,7 +83,7 @@ var questions = [
         description: 'Nenhuma dessas razões indicam minha ideia e/ou comportamento sobre vacinas.',
         options: '1-7',
         category: ''
-    };
+    }];
     
 var questions_intencao_vacina= [    
     {
@@ -98,7 +98,7 @@ var questions_intencao_vacina= [
         description: 'Baseado em seus conhecimentos, quão provável que ao se vacinar contra a covid-19 você venha a sofrer complicações de saúde?',
         options: '1-7',
         category: ''
-    },
+    }];
    
 var questios_ciencia= [
     {
