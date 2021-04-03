@@ -21,7 +21,7 @@
 	background-image: url('../images/feausp.png');
     background-repeat: no-repeat;
     background-position: 30px 25px;
-	
+	min-height: 300px;
 
     margin: 20px auto; 
     width: 700px; 
@@ -181,7 +181,7 @@
   }
   
   td { 
-	min-width: 50px;
+	min-width: 40px;
   }
 
   td, th {

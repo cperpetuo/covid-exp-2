@@ -17,7 +17,7 @@ function firebaseConfiguration() {
 function saveAnswers(formName, questions, conditional) {
 
 /* *************************
-**************************** 
+****************************
   var code = $('#code').val();
   if(code == 'generate')
     code = getCode();

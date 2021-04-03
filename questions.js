@@ -1,7 +1,7 @@
 var questions = [
     {
         id: 1,
-        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
         description: 'A vacinação é uma boa maneira de proteger a mim e minha família de doenças.',
         options: '1-7',
         category: 'positive'
@@ -89,20 +89,20 @@ var questions_intencao_vacina_antes= [
     {
         id: 20,
         title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
-        description: 'Tenho intenção de  tomar a vacina e vacinar minha família contra a covid-19 quando estiver disponível.',
+        description: 'Tenho intenção de  tomar a vacina e vacinar minha família contra a COVID-19 quando estiver disponível.',
         options: '1-7',
         category: 'positive'
     },
 	{
 		id: 21,
-        description: 'Quando você pretende se vacinar contra a covid-19?',
+        description: 'Quando você pretende se vacinar contra a COVID-19?',
         list:['o quanto antes','em até seis meses', 'após seis meses', 'nunca'],
         options: 'list',
         category: 'ignore'
 	},
     {
         id: 22,
-        description: 'É provável que, ao me vacinar contra a covid-19, eu venha a sofrer complicações de saúde.',
+        description: 'É provável que, ao me vacinar contra a COVID-19, eu venha a sofrer complicações de saúde.',
         options: '1-7',
         category: 'negative'
     }];
@@ -110,6 +110,7 @@ var questions_intencao_vacina_antes= [
 var questions_ciencia= [
     {
         id: 30,
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
         description: 'A ciência nos fornece uma melhor compreensão do universo do que a religião. ',
         options: '1-7',
         category: 'positive'
@@ -134,7 +135,7 @@ var questions_ciencia= [
     },
     {
         id: 34,
-        description: 'A ciência é o meio mais eficiente de alcançar a cura para o COVID-19.',
+        description: 'A ciência é o meio mais eficiente de alcançar a cura para a COVID-19.',
         options: '1-7',
         category: 'positive'
     }
@@ -143,7 +144,8 @@ var questions_ciencia= [
 var questions_distanciamento= [
     {
         id: 40,
-        description: 'Evitei intencionalmente qualquer forma de aglomeração social devido ao COVID-19. ',
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
+        description: 'Evitei intencionalmente qualquer forma de aglomeração social devido à COVID-19. ',
         options: '1-7',
         category: 'positive'
     },   
@@ -155,13 +157,13 @@ var questions_distanciamento= [
     },   
     {
         id: 42,
-        description: 'Eu mantenho uma distância de 1,5m de outras pessoas fora da minha família imediata por causa do COVID-19.',
+        description: 'Eu mantenho uma distância de 1,5m de outras pessoas fora da minha família imediata por causa da COVID-19.',
         options: '1-7',
         category: 'positive'
     },   
     {
         id: 43,
-        description: 'O distanciamento social é uma medida eficiente para o controle do COVID-19. ',
+        description: 'O distanciamento social é uma medida eficiente para o controle da COVID-19. ',
         options: '1-7',
         category: 'positive'
      }    
@@ -286,7 +288,7 @@ var cognitiva_CRT = [
 	var cognitiva_AOT = [
     {
         id: 701,
-        title: 'Nesta seção você responderá algumas questões. Por favor, responda da forma mais precisa possível.',
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
         description: 'Uma pessoa deve sempre considerar novas possibilidades.',
         options: '1-7',
         category: 'positive'
@@ -464,14 +466,14 @@ var cognitiva_CRT = [
 	var questions_intencao_vacina_depois= [    
     {
         id: 201,
-        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
-        description: 'Tenho intenção de tomar a vacina e vacinar minha família contra a covid-19 quando estiver disponível.',
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
+        description: 'Tenho intenção de tomar a vacina e vacinar minha família contra a COVID-19 quando estiver disponível.',
         options: '1-7',
         category: 'positive'
     },
     {
         id: 202,
-        description: 'Baseado em meus conhecimentos, é provável que ao me vacinar contra a covid-19 eu venha a sofrer complicações de saúde.',
+        description: 'Baseado em meus conhecimentos, é provável que ao me vacinar contra a COVID-19 eu venha a sofrer complicações de saúde.',
         options: '1-7',
         category: 'negative'
     }
