@@ -14,17 +14,45 @@ function firebaseConfiguration() {
 }
 
 // Insere todas as respostas na base de dados
-function saveAnswers(formName, questions) {
- 
+function saveAnswers(formName, questions, conditional) {
+
+/* *************************
+**************************** 
+  var code = $('#code').val();
+  if(code == 'generate')
+    code = getCode();
+  
+  window.location.href = $("#next").val() + "?code=" + code;
+  return;
+/* *************************
+**************************** */
+
   // Obtem as respostas selecionadas
   var fields = document.getElementsByTagName('input');
 
   var answers = new Array();
+  var perguntas = new Array();
 
   for(i=0; i< fields.length; i++) {
     if(((fields[i].type == 'radio' || fields[i].type == 'checkbox') && fields[i].checked) || (fields[i].type == 'text' && fields[i].value != '')) {
-      var name = fields[i].name.split('_')[1];
-      var value = fields[i].value;
+	  var value = "";
+	  var name = fields[i].name.split('_')[1];
+	  if(perguntas.includes(name)) 
+		continue;
+      perguntas.push(name)
+	  if(fields[i].type == 'checkbox') {
+		var checkboxes = document.getElementsByName(fields[i].name);
+		var checkboxesChecked = [];
+		value = "";
+		for (var j=0; j<checkboxes.length; j++) {
+          if (checkboxes[j].checked) {
+            value += checkboxes[j].value + ",";
+          }
+        }
+	  }
+	  else {
+        value = fields[i].value;
+	  }
       var category = fields[i].getAttribute("category");
       var answer = {
         pergunta : name,
@@ -38,7 +66,7 @@ function saveAnswers(formName, questions) {
   for(i=0; i<answers.length; i++) {    
     
     var a = answers[i];
-    console.log(a.pergunta + ',' + a.resposta + ',' + a.category);
+    //console.log(a.pergunta + ',' + a.resposta + ',' + a.category);
     
   }
 
@@ -58,26 +86,32 @@ function saveAnswers(formName, questions) {
     alert("Você precisa informar o código gerado no passo anterior.");
     return false;
   }
-
+ 
   // Envia para a base de dados
   if(code == 'generate') {
     code = getCode();
     firebase.database().ref(formName + '/' + code).set(answerObject)
       .then(function(snapshot) {
-        alert("Dados inseridos com sucesso.");
-        $("#codigo").html(code);
-        $("#next").attr('href', $("#next").attr('href') + code);
-        $("#success").show();
+        //alert("Dados inseridos com sucesso.");
+		if(conditional) {
+		  getUserGrade(code, $("#next1").val(), $("#next").val());
+		}
+	    else {
+          window.location.href = $("#next").val() + "?code=" + code;
+		}
      }, function(error) {
       alert(error);
     });
   } else {
     firebase.database().ref(formName + '/' + code).update(answerObject)
     .then(function(snapshot) {
-      alert("Dados atualizados com sucesso.");
-      $("#codigo").html(code);
-      $("#next").attr('href', $("#next").attr('href') + code);
-      $("#success").show();
+      //alert("Dados atualizados com sucesso.");
+	  if(conditional) {
+		getUserGrade(code, $("#next1").val(), $("#next").val());
+	  }
+	  else {
+        window.location.href = $("#next").val() + "?code=" + code;
+	  }
     }, function(error) {
     alert(error);
   });
@@ -97,4 +131,35 @@ function getCode() {
       code += time[i];
   }
   return code;
+}
+
+
+function getUserGrade(code, url1, url2) {
+	
+  var ref = firebase.database().ref('questions');
+  // Attach an asynchronous callback to read the data at our posts reference
+  ref.on("value", function(snapshot) {
+	
+	$.each( snapshot.val(), function( user, answers ) {
+	  if(user == code) {
+	    var total = 0;
+	    $.each( answers.respostas, function( key, value ) {
+		  var resposta = value.resposta;
+		  var category = value.category;
+		  if(category == 'positive')
+		    total += parseInt(resposta);
+		  else if(category == 'negative')
+		    total += (8 - parseInt(resposta));
+	    });	  
+	    grade = total / questions.length;
+		if(grade < 5)
+	      window.location.href = url1 + "?code=" + code;
+		else
+	      window.location.href = url2 + "?code=" + code;
+	  }
+	});
+	  
+  }, function (errorObject) {
+    console.log("The read failed: " + errorObject.code);
+  });
 }

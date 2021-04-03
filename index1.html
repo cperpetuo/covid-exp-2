@@ -13,16 +13,13 @@
 <body>
   <div id="content" class="content">
     
-	  <h1>Experimento 1</h1>
+    <h1>Questões preliminares</h1>
 
-	  <div id="success" class="content" style="display: none;">
-		<p>Obrigado por colaborar com a pesquisa. Anote o código abaixo para resgatar o seu prêmio.</p>
-		<p id="codigo"></p>
-		<p>Siga para a <a id='next' href="index2.html?code=">próxima etapa</a></p>
-	  </div>
+      <input type="hidden" id="code" name="code" value="generate"/>
+      <input type="hidden" id="next" name="next" value="index2.html"/>
   </div>
-  <div class="center"><button onclick="saveAnswers('percepcoes',questions)">Próxima</button></div>
-  
+
+      <div class="center"><button onclick="saveAnswers('questions',questions)">Próximo</button></div>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
@@ -34,8 +31,15 @@
       // Your web app's Firebase configuration
       firebaseConfiguration();
 
+      // Seta o codigo do respondente
+      var url = new URL(window.location.href);
+      var code = url.searchParams.get("code");
+      if(code != null) {
+        $('#code').val(code);
+      }
+
       var count = 1;
-      $.each( debias_mito_1, function( key, value ) {
+      $.each( questions, function( key, value ) {
 
         // Pergunta
         var question = createQuestion(count, key, value);

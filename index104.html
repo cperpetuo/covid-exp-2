@@ -13,12 +13,21 @@
 <body>
   <div id="content" class="content">
     
-    <h1>Questões preliminares</h1>
+    <div class="code">
+      <!-- p>Para continuar a pesquisa, insira o seu código no campo abaixo:</p -->
+      <input type="hidden" id="code" name="code" value=""/>
+      <input type="hidden" id="next" name="next" value="index105.html"/>
+   </div>
 
-      <input type="hidden" id="code" name="code" value="generate"/>
-      <input type="hidden" id="next" name="next" value="index6.html"/>
   </div>
-      <div class="center"><button onclick="saveAnswers('questions_distanciamento',questions_distanciamento)">Próximo</button></div>
+
+  <!-- div id="success" class="content" style="display: none;">
+    <p>Obrigado por colaborar com a pesquisa. Anote o código abaixo para resgatar o seu prêmio.</p>
+    <p id="codigo"></p>
+    <p>Siga para a <a id='next' href="index4.html?code=">próxima etapa</a></p>
+  </div-->
+
+  <div class="center"><button onclick="saveAnswers('debias_mito_4',debias_mito_4)">Próximo</button></div>
   
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
@@ -39,7 +48,7 @@
       }
 
       var count = 1;
-      $.each( questions_distanciamento, function( key, value ) {
+      $.each( debias_mito_4, function( key, value ) {
 
         // Pergunta
         var question = createQuestion(count, key, value);

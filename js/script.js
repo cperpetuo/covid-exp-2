@@ -142,8 +142,13 @@ function createOptionsOpen(question, key, value) {
   input.name = 'pergunta_' + value.id;
   input.className = 'open';
   input.value = '';
+  input.placeholder = 'Escreva aqui a resposta (somente números)';
   input.type = 'text';
   $(div).append(input);
+  
+  setInputFilter(input, function(value) {
+    return /^\d*,?\d*$/.test(value); // Allow digits and '.' only, using a RegExp
+  });
 
   $(question).append(div);
 }
@@ -207,4 +212,22 @@ function createOptionsCheckList(question, key, value) {
     $(options).append(br);
   }
   $(question).append(options);
+}
+
+// Restricts input for the given textbox to the given inputFilter function.
+function setInputFilter(textbox, inputFilter) {
+  ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
+    textbox.addEventListener(event, function() {
+      if (inputFilter(this.value)) {
+        this.oldValue = this.value;
+        this.oldSelectionStart = this.selectionStart;
+        this.oldSelectionEnd = this.selectionEnd;
+      } else if (this.hasOwnProperty("oldValue")) {
+        this.value = this.oldValue;
+        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+      } else {
+        this.value = "";
+      }
+    });
+  });
 }

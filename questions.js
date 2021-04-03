@@ -2,108 +2,109 @@ var questions = [
     {
         id: 1,
         title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
-        description: 'A obtenção de vacinas é uma boa maneira de proteger a mim e minha futura criança(s) de doença.',
+        description: 'A vacinação é uma boa maneira de proteger a mim e minha família de doenças.',
         options: '1-7',
-        category: ''
+        category: 'positive'
     },
     {
         id: 2,
-        description: 'Geralmente eu faria o que meu médico recomenda sobre vacinas.',
+        description: 'Geralmente eu sigo as recomendações do meu médico sobre vacinação.',
         options: '1-7',
-        category: ''
+        category: 'positive'
     },
     {
         id: 3,
         description: 'As novas vacinas só são recomendadas se forem tão seguras quanto as vacinas mais antigas.',
         options: '1-7',
-        category: ''
+        category: 'positive'
     },
     {
         id: 4,
         description: 'Meu(s) futuro(s) filho(s) não precisará(ão) de vacinas para doenças que já não são mais comuns.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     }, 
     {
         id: 5,
-        description: 'Os pais devem ter o direito de recusar vacinas que são necessárias para a escola por qualquer razão.',
+        description: 'Os pais devem ter o direito de recusar, por qualquer razão, vacinas que são exigidas pela escola.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     },
     {
         id: 6,
-        description: 'Tantas crianças são vacinadas que minha futura(s) criança(s) estará(ão) segura(s) destas doenças, mesmo se eu não os vacinarei.',
+        description: 'Tantas crianças são vacinadas que minha(s) futura(s) criança(s) estará(ão) segura(s) destas doenças, mesmo se eu não as vacinar.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     },
     {
         id: 7,
         description: 'Os graves efeitos adversos das vacinas me preocupam.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     },
     {
         id: 8,
         description: 'Algumas vacinas causam autismo em crianças saudáveis.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     },
    {
         id: 9,
         description: 'Tenho receio de tomar a vacina e de me contaminar com o coronavírus.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     }, 
     {
         id: 10,
-        description: 'A vacina pode provavelmente causar outras doenças.',
+        description: 'As vacinas podem causar outras doenças.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     },
     {
         id: 11,
-        description: 'A  vacina pode conter chips implantados para controle da população.',
+        description: 'A vacina pode conter chips implantados para controle da população.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     },
     {
         id: 12,
         description: 'A vacina pode alterar nosso DNA.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     },
     {
         id: 13,
         description: 'A vacina é produzida a partir de células de fetos abortados.',
         options: '1-7',
-        category: ''
+        category: 'negative'
     },
-    {
+    /*{
         id: 14,
         description: 'Nenhuma dessas razões indicam minha ideia e/ou comportamento sobre vacinas.',
         options: '1-7',
-        category: ''
-    }];
+        category: 'negative'
+    }*/];
     
 var questions_intencao_vacina_antes= [    
     {
         id: 20,
         title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
-        description: 'Qual a sua intenção de  tomar a vacina e vacinar sua família contra a covid-19 quando estiver disponível?',
+        description: 'Tenho intenção de  tomar a vacina e vacinar minha família contra a covid-19 quando estiver disponível.',
         options: '1-7',
-        category: 'intencao_antes'
+        category: 'positive'
     },
 	{
 		id: 21,
         description: 'Quando você pretende se vacinar contra a covid-19?',
         list:['o quanto antes','em até seis meses', 'após seis meses', 'nunca'],
-        category: 'intencao_tempo'
-	}
+        options: 'list',
+        category: 'ignore'
+	},
     {
         id: 22,
-        description: 'Baseado em seus conhecimentos, quão provável que ao se vacinar contra a covid-19 você venha a sofrer complicações de saúde?',
+        description: 'É provável que, ao me vacinar contra a covid-19, eu venha a sofrer complicações de saúde.',
         options: '1-7',
-        category: 'complicacoes_antes'
+        category: 'negative'
     }];
    
 var questions_ciencia= [
@@ -111,31 +112,31 @@ var questions_ciencia= [
         id: 30,
         description: 'A ciência nos fornece uma melhor compreensão do universo do que a religião. ',
         options: '1-7',
-        category: 'ciencia'
+        category: 'positive'
     },
     {
         id: 31,
         description: 'O método científico é o melhor caminho confiável para o conhecimento.',
         options: '1-7',
-        category: 'ciencia'
+        category: 'positive'
     },
     {
         id: 32,
         description: 'O real conhecimento que podemos ter é o conhecimento científico. ',
         options: '1-7',
-        category: 'ciencia'
+        category: 'positive'
     },
     {
         id: 33,
         description: 'A ciência é a parte mais valiosa da cultura humana.',
         options: '1-7',
-        category: 'ciencia'
+        category: 'positive'
     },
     {
         id: 34,
         description: 'A ciência é o meio mais eficiente de alcançar a cura para o COVID-19.',
         options: '1-7',
-        category: 'ciencia'
+        category: 'positive'
     }
 ]; 
 
@@ -144,25 +145,25 @@ var questions_distanciamento= [
         id: 40,
         description: 'Evitei intencionalmente qualquer forma de aglomeração social devido ao COVID-19. ',
         options: '1-7',
-        category: 'distanciamento'
+        category: 'positive'
     },   
     {
         id: 41,
         description: 'Em geral, segui as diretrizes do governo relacionadas ao distanciamento social. ',
         options: '1-7',
-        category: 'distanciamento'
+        category: 'positive'
     },   
     {
         id: 42,
         description: 'Eu mantenho uma distância de 1,5m de outras pessoas fora da minha família imediata por causa do COVID-19.',
         options: '1-7',
-        category: 'distanciamento'
+        category: 'positive'
     },   
     {
         id: 43,
         description: 'O distanciamento social é uma medida eficiente para o controle do COVID-19. ',
         options: '1-7',
-        category: 'distanciamento'
+        category: 'positive'
      }    
 ];  
     
@@ -204,13 +205,13 @@ var demograficas = [
         list: ['sem educação formal','até o ensino médio','ensino superior','pós-graduação'],
         category: 'perfil_respondente'
     },  
-    {
+    /*{
         id: 56,
         description: 'Em que estado você reside?',
         options: 'list',
         list: ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO' ],
         category: 'perfil_respondente'
-    },  
+    },*/  
     {
         id: 57,
         description: 'Quantas pessoas no total moram em sua casa?',
@@ -231,14 +232,14 @@ var demograficas = [
         options: 'check-list',
         list: ['Notícias de esportes', 'Notícias políticas', 'Celebridades','Notícias de negócio (tendências de mercado, oportunidades de emprego)','Ciência e tecnologia', 'Bem-estar e saúde', 'Humor, piadas, memes', 'Outras'],
         category: 'perfil_respondente'
-     }, 
+     }/*, 
      {
         id: 510,
-        description: 'Com que frequência você verifica as mensagens mídias sociais?',
+        description: 'Quais sites de notícias você mais utliza?',
         options: 'check-list',
         list: ['BBC News', 'G1', 'Secom','OMS','CNN', 'TV Senado', 'Google News', 'Outros'],
         category: 'perfil_respondente'
-      }, 
+      },*/ 
 ];
     
 var cognitiva_CRT = [
@@ -251,7 +252,7 @@ var cognitiva_CRT = [
     },
     {
         id: 602,
-	description: 'As idades de Marcos e João somam 28 anos no total. Marcos é 10 anos mais velho do que João. Quantos anos tem João?',
+	    description: 'As idades de Marcos e João somam 28 anos no total. Marcos é 10 anos mais velho do que João. Quantos anos tem João?',
         options: 'open',
         category: 'habilidate-cognitiva-crt'
     },
@@ -277,203 +278,201 @@ var cognitiva_CRT = [
         id: 607,
         description: 'Você já conhecia alguns dos problemas listados anteriormente?',
         options: 'list',
-	list: ['Sim','Não','Talvez'],
+		list: ['Sim','Não','Talvez'],
         category: 'habilidate-cognitiva-crt'
     }
 ];
 
-var cognitiva_AOT = [
+	var cognitiva_AOT = [
     {
         id: 701,
         title: 'Nesta seção você responderá algumas questões. Por favor, responda da forma mais precisa possível.',
         description: 'Uma pessoa deve sempre considerar novas possibilidades.',
         options: '1-7',
-        category: 'habilidate-cognitiva-aot'
+        category: 'positive'
     },
     {
         id: 702,
         description: 'As pessoas devem sempre levar em consideração as evidências que vão contra suas crenças.',
         options: '1-7',
-        category: 'habilidate-cognitiva-aot'
+        category: 'positive'
     },
     {
         id: 703,
         description: 'É importante persistir em suas crenças, mesmo quando as provas são apresentadas contra elas.',
         options: '1-7',
-        category: 'habilidate-cognitiva-aot'
+        category: 'negative'
     },
     {
         id: 704,
         description: 'Certas crenças são importantes demais para serem abandonadas, não importa o quão bom possa ser um caso contra elas.',
         options: '1-7',
-        category: 'habilidate-cognitiva-aot'
+        category: 'negative'
     },
     {
         id: 705,
         description: 'Deve-se desconsiderar as evidências que conflitam com suas crenças estabelecidas.',
         options: '1-7',
-        category: 'habilidate-cognitiva-aot'
+        category: 'negative'
     },
     {
         id: 706,
         description: 'As crenças devem ser sempre revistas em resposta à novas informações ou evidências.',
         options: '1-7',
-        category: 'habilidate-cognitiva-aot'
+        category: 'positive'
     },
     {
         id: 707,
         description: 'Ninguém pode me dissuadir de algo que eu sei que está certo.',
         options: '1-7',
-	category: 'habilidate-cognitiva-aot'
+		category: 'negative'
     },
     {
         id: 708,
         description: 'Acredito que a lealdade aos ideais e princípios de cada um é mais importante do que "a mente aberta"',
         options: '1-7',
-	category: 'habilidate-cognitiva-aot'
+		category: 'negative'
     }	
 ];
 
-var debias_mito_1 = [
-    {
-        id: 901,
-        description: 'Você concorda com a mensagem disponibilizada?',
-        options: 'list',
-	list: ['Sim','Não'],
-	image: 'images/mito-1.jpg',	  
-    },	
-    {
-        id: 902,
-        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
-        options: 'list',
-	list: ['Sim','Não','Talvez'],
-     }	
-  ];
-
-var debias_mito_1 = [
+	var debias_mito_1 = [
     {
         id: 903,
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
-	list: ['Sim','Não'],
-	image: 'images/mito-1.jpg',	  
+		list: ['Sim','Não'],
+		image: 'images/mito-1.jpg',	  
+		category: 'mito'
     },	
-    {
+    /*{
         id: 904,
-        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)? ',
         options: 'list',
-	list: ['Sim','Não','Talvez'],
-     }	
+		list: ['Sim','Não','Talvez'],
+		category: 'mito'
+     }	*/
   ];
   
-var debias_mito_2 = [
+	var debias_mito_2 = [
     {
         id: 905,
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
-	list: ['Sim','Não'],
-	image: 'images/mito-2.jpg',	  
+		list: ['Sim','Não'],
+		image: 'images/mito-2.jpg',	  
+		category: 'mito'
     },	
-    {
+    /*{
         id: 906,
-        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)? ',
         options: 'list',
-	list: ['Sim','Não','Talvez'],
-     }	
+		list: ['Sim','Não','Talvez'],
+		category: 'mito'
+     }	*/
   ];
   
-var debias_mito_3 = [
+	var debias_mito_3 = [
     {
         id: 907,
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
-	list: ['Sim','Não'],
-	image: 'images/mito-3.jpg',	  
+		list: ['Sim','Não'],
+		image: 'images/mito-3.jpg',	  
+		category: 'mito'
     },	
-    {
+    /*{
         id: 908,
-        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)? ',
         options: 'list',
-	list: ['Sim','Não','Talvez'],
-     }	
+		list: ['Sim','Não','Talvez'],
+		category: 'mito'
+     }		*/
   ];
   
-var debias_mito_4 = [
+	var debias_mito_4 = [
     {
         id: 910,
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
-	list: ['Sim','Não'],
-	image: 'images/mito-4.jpg',	  
+		list: ['Sim','Não'],
+		image: 'images/mito-4.jpg',	  
+		category: 'mito'
     },	
-    {
+    /*{
         id: 911,
-        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)? ',
         options: 'list',
-	list: ['Sim','Não','Talvez'],
-     }	
+		list: ['Sim','Não','Talvez'],
+		category: 'mito'
+     }		*/
   ];
   
-var debias_mito_5 = [
+	var debias_mito_5 = [
     {
         id: 912,
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
-	list: ['Sim','Não'],
-	image: 'images/mito-5.jpg',	  
+		list: ['Sim','Não'],
+		image: 'images/mito-5.jpg',	  
+		category: 'mito'
     },	
-    {
+    /*{
         id: 913,
-        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)? ',
         options: 'list',
-	list: ['Sim','Não','Talvez'],
-     }	
+		list: ['Sim','Não','Talvez'],
+		category: 'mito'
+     }		*/
   ];
   
-var debias_mito_6 = [
+	var debias_mito_6 = [
     {
         id: 914,
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
-	list: ['Sim','Não'],
-	image: 'images/mito-6.jpg',	  
+		list: ['Sim','Não'],
+		image: 'images/mito-6.jpg',	  
+		category: 'mito'
     },	
-    {
+    /*{
         id: 915,
-        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)? ',
         options: 'list',
-	list: ['Sim','Não','Talvez'],
-     }	
+		list: ['Sim','Não','Talvez'],
+		category: 'mito'
+     }		*/
   ];
   
-var debias_mito_7 = [
+	var debias_mito_7 = [
     {
         id: 916,
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
-	list: ['Sim','Não'],
-	image: 'images/mito-7.jpg',	  
+		list: ['Sim','Não'],
+		image: 'images/mito-7.jpg',	  
+		category: 'mito'
     },	
-    {
+    /*{
         id: 917,
-        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)"? ',
+        description: 'Você compartilharia esta mensagem em sua rede social? (por exemplo, através do Facebook ou Whatsapp)? ',
         options: 'list',
-	list: ['Sim','Não','Talvez'],
-     }	
+		list: ['Sim','Não','Talvez'],
+		category: 'mito'
+     }		*/
   ];
   
-var questions_intencao_vacina_depois= [    
+	var questions_intencao_vacina_depois= [    
     {
         id: 201,
         title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela',
-        description: 'Qual a sua intenção de  tomar a vacina e vacinar sua família contra a covid-19 quando estiver disponível?',
+        description: 'Tenho intenção de tomar a vacina e vacinar minha família contra a covid-19 quando estiver disponível.',
         options: '1-7',
-        category: 'intencao_depois'
+        category: 'positive'
     },
     {
         id: 202,
-        description: 'Baseado em seus conhecimentos, quão provável que ao se vacinar contra a covid-19 você venha a sofrer complicações de saúde?',
+        description: 'Baseado em meus conhecimentos, é provável que ao me vacinar contra a covid-19 eu venha a sofrer complicações de saúde.',
         options: '1-7',
-        category: 'complicacoes_depois'
+        category: 'negative'
     }
   ];

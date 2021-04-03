@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pesquisa sobre Covid-19</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="questions.js"></script>
+<script src="js/database.js"></script>
+<script src="js/report2.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+  
+<body>
+  <div id="content" class="content">
+    
+    <h1>Relatório</h1>
+	
+	
+	<table id="table">
+	</table>
+	
+	  
+  </div>
+
+  <div id="success" class="content" style="display: none;">
+    <p>Obrigado por colaborar com a pesquisa. Anote o código abaixo para resgatar o seu prêmio.</p>
+    <p id="codigo"></p>
+    <p>Siga para a <a id='next' href="index16.html?code=">próxima etapa</a></p>
+  </div>
+
+  <div class="center"></div>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+
+  <script>
+
+    $('document').ready(function() {
+
+      // Your web app's Firebase configuration
+      firebaseConfiguration();
+
+      // Seta o codigo do respondente
+      var url = new URL(window.location.href);
+      var code = url.searchParams.get("code");
+      if(code != null) {
+        $('#code').val(code);
+      }
+      
+      // List users 
+	  evaluateAnswers('questions', 'table', questions);	  
+	  evaluateOpenAnswers('cognitiva_CRT', 'table', cognitiva_CRT);	  
+	  evaluateAnswers('cognitiva_AOT', 'table', cognitiva_AOT);
+	  evaluateAnswers('questions_ciencia', 'table', questions_ciencia);
+	  evaluateAnswers('questions_distanciamento', 'table', questions_distanciamento);
+	  evaluateAnswers('questions_intencao_vacina_antes', 'table', questions_intencao_vacina_antes);
+	  evaluateAnswers('questions_intencao_vacina_depois', 'table', questions_intencao_vacina_depois);
+    });
+  </script>
+
+</body>
+</html>
