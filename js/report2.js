@@ -79,8 +79,14 @@ function updateTable(element, users) {
 	  td5.appendChild(document.createTextNode(value["questions_ciencia"]));
 	  td6.appendChild(document.createTextNode(value["questions_distanciamento"]));
 	  td7.appendChild(document.createTextNode(value["questions_intencao_vacina_antes"]));
-	  td8.appendChild(document.createTextNode(value["questions_intencao_vacina_depois"]));  
+	  td8.appendChild(document.createTextNode(getValue(value["questions_intencao_vacina_depois"])));  
 	});
+}
+
+function getValue(val) {
+	if(!val)
+		return "--";
+	return val;
 }
 
 
