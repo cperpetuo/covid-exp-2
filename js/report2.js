@@ -24,7 +24,7 @@ function evaluateAnswers(reference, element, array) {
 	  if(!grades)
 		  grades = {};
 	  
-	  grades[reference] = total / size;
+	  grades[reference] = Math.round(100 * total / size) / 100;
 	  
 	  users[user] = grades;
 	});
@@ -113,7 +113,7 @@ function evaluateOpenAnswers(reference, element, array) {
 	  if(!grades)
 		  grades = {};
 	  
-	  grades[reference] = (total * 10)/(array.length-1);
+	  grades[reference] = Math.round(100 * (total * 10)/(array.length-1)) / 100;
 	  
 	  users[user] = grades;
 	});
