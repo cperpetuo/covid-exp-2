@@ -17,6 +17,8 @@ function evaluateAnswers(reference, element, array) {
 		  total += parseInt(resposta);
 		else if(category == 'negative')
 		  total += (8 - parseInt(resposta));
+		else if(category == 'mito')
+			if(resposta == "Sim") total++;
 		else if(category == 'ignore')
 			size--;
 	  });	 
@@ -24,7 +26,15 @@ function evaluateAnswers(reference, element, array) {
 	  if(!grades)
 		  grades = {};
 	  
-	  grades[reference] = Math.round(100 * total / size) / 100;
+	  if(reference.indexOf("debias") > -1)
+		  reference = "mito";	  
+	  
+	  if(grades[reference]) {
+		g = grades[reference];
+		grades[reference] += total;
+	  }
+	  else
+		grades[reference] = Math.round(100 * total / size) / 100;
 	  
 	  users[user] = grades;
 	});
@@ -50,6 +60,7 @@ function updateTable(element, users) {
 	    <th>Dist.</th>\
 	    <th>Vacina Antes</th>\
 	    <th>Vacina Depois</th>\
+	    <th>Mito x Fato</th>\
 	  <tr>	\
 	</table>";
 	
@@ -63,6 +74,7 @@ function updateTable(element, users) {
 	  var td6 = document.createElement("td");
 	  var td7 = document.createElement("td");
 	  var td8 = document.createElement("td");
+	  var td9 = document.createElement("td");
 	  table.appendChild(tr);
 	  tr.appendChild(td1);
 	  tr.appendChild(td2);
@@ -72,6 +84,7 @@ function updateTable(element, users) {
 	  tr.appendChild(td6);
 	  tr.appendChild(td7);
 	  tr.appendChild(td8);
+	  tr.appendChild(td9);
 	  td1.appendChild(document.createTextNode(key));
 	  td2.appendChild(document.createTextNode(value["questions"]));
 	  td3.appendChild(document.createTextNode(value["cognitiva_CRT"]));
@@ -80,6 +93,7 @@ function updateTable(element, users) {
 	  td6.appendChild(document.createTextNode(value["questions_distanciamento"]));
 	  td7.appendChild(document.createTextNode(value["questions_intencao_vacina_antes"]));
 	  td8.appendChild(document.createTextNode(getValue(value["questions_intencao_vacina_depois"])));  
+	  td9.appendChild(document.createTextNode(getValue(value["mito"])));  
 	});
 }
 
