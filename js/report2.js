@@ -59,8 +59,8 @@ function updateTable(element, users) {
 	    <th>Ciência</th>\
 	    <th>Dist.</th>\
 	    <th>Vacina Antes</th>\
-	    <th>Vacina Depois</th>\
 	    <th>Mito x Fato</th>\
+	    <th>Vacina Depois</th>\
 	  <tr>	\
 	</table>";
 	
@@ -92,8 +92,8 @@ function updateTable(element, users) {
 	  td5.appendChild(document.createTextNode(value["questions_ciencia"]));
 	  td6.appendChild(document.createTextNode(value["questions_distanciamento"]));
 	  td7.appendChild(document.createTextNode(value["questions_intencao_vacina_antes"]));
-	  td8.appendChild(document.createTextNode(getValue(value["questions_intencao_vacina_depois"])));  
-	  td9.appendChild(document.createTextNode(getValue(value["mito"])));  
+	  td8.appendChild(document.createTextNode(getValue(value["mito"])));  
+	  td9.appendChild(document.createTextNode(getValue(value["questions_intencao_vacina_depois"])));  
 	});
 }
 
