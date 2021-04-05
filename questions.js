@@ -110,7 +110,7 @@ var questions_intencao_vacina_antes= [
 var questions_ciencia= [
     {
         id: 30,
-        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
         description: 'A ciência nos fornece uma melhor compreensão do universo do que a religião. ',
         options: '1-7',
         category: 'positive'
@@ -144,7 +144,7 @@ var questions_ciencia= [
 var questions_distanciamento= [
     {
         id: 40,
-        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância com elas. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
+        title: 'Abaixo estão algumas frases que você deve avaliar de acordo com sua opinião, indicando seu grau de concordância. Use a escala de avaliação fornecida abaixo, na qual o ponto 1 significa que você discorda totalmente da frase, e o ponto 7 indica que você concorda totalmente com ela.',
         description: 'Evitei intencionalmente qualquer forma de aglomeração social devido à COVID-19. ',
         options: '1-7',
         category: 'positive'
