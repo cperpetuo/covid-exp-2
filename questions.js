@@ -307,7 +307,7 @@ var cognitiva_CRT = [
     },
     {
         id: 704,
-        description: 'Certas crenças são importantes demais para serem abandonadas, não importa o quão bom possa ser um caso contra elas.',
+        description: 'Certas crenças são importantes demais para serem abandonadas, não importa o quão bom possa o argumento contra elas.',
         options: '1-7',
         category: 'negative'
     },
