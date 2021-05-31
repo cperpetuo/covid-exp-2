@@ -343,7 +343,7 @@ var cognitiva_CRT = [
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
 		list: ['Sim','Não'],
-		image: 'images/mito-1.jpg',	  
+		image: 'images/mito-1.JPG',	  
 		category: 'mito'
     },	
     /*{
@@ -361,7 +361,7 @@ var cognitiva_CRT = [
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
 		list: ['Sim','Não'],
-		image: 'images/mito-2.jpg',	  
+		image: 'images/mito-2.JPG',	  
 		category: 'mito'
     },	
     /*{
@@ -379,7 +379,7 @@ var cognitiva_CRT = [
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
 		list: ['Sim','Não'],
-		image: 'images/mito-3.jpg',	  
+		image: 'images/mito-3.JPG',	  
 		category: 'mito'
     },	
     /*{
@@ -397,7 +397,7 @@ var cognitiva_CRT = [
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
 		list: ['Sim','Não'],
-		image: 'images/mito-4.jpg',	  
+		image: 'images/mito-4.JPG',	  
 		category: 'mito'
     },	
     /*{
@@ -415,7 +415,7 @@ var cognitiva_CRT = [
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
 		list: ['Sim','Não'],
-		image: 'images/mito-5.jpg',	  
+		image: 'images/mito-5.JPG',	  
 		category: 'mito'
     },	
     /*{
@@ -433,7 +433,7 @@ var cognitiva_CRT = [
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
 		list: ['Sim','Não'],
-		image: 'images/mito-6.jpg',	  
+		image: 'images/mito-6.JPG',	  
 		category: 'mito'
     },	
     /*{
@@ -451,7 +451,7 @@ var cognitiva_CRT = [
         description: 'Você concorda com a mensagem disponibilizada?',
         options: 'list',
 		list: ['Sim','Não'],
-		image: 'images/mito-7.jpg',	  
+		image: 'images/mito-7.JPG',	  
 		category: 'mito'
     },	
     /*{
